@@ -1,0 +1,47 @@
+{
+  "num_images": 1,
+  "num_with_plate": 1,
+  "num_without_plate": 0,
+  "num_invalid": 0,
+  "plate_detection_rate": 1.0,
+  "detection_precision": 1.0,
+  "detection_recall": 1.0,
+  "detection_f1": 1.0,
+  "detection_true_positive": 1,
+  "detection_false_positive": 0,
+  "detection_false_negative": 0,
+  "detection_true_negative": 0,
+  "character_segmentation_accuracy": 1.0,
+  "character_segmentation_method": [
+    "count_proxy"
+  ],
+  "character_accuracy": 1.0,
+  "character_accuracy_over_gt": 1.0,
+  "character_correct": 10,
+  "character_substitutions": 0,
+  "character_insertions": 0,
+  "character_deletions": 0,
+  "ground_truth_characters": 10,
+  "exact_plate_accuracy": 1.0,
+  "exact_plate_matches": 1,
+  "average_processing_time_ms": 17822.83809990622,
+  "stage_average_time_ms": {
+    "preprocess": 38.218599976971745,
+    "detection": 16450.36329992581,
+    "rectification": 39.044099976308644,
+    "segmentation": 279.93309998419136,
+    "recognition": 968.6970999464393,
+    "postprocessing": 0.9539999300613999
+  },
+  "failure_rate": 0.0,
+  "success_rate": 1.0,
+  "status_counts": {
+    "SUCCESS": 1
+  },
+  "conditions": [
+    "special_format"
+  ],
+  "split": "special",
+  "image_dir": "data\\user_images",
+  "elapsed_seconds": 17.82348640006967
+}

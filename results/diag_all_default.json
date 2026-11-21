@@ -1,0 +1,7956 @@
+{
+ "1.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\1.webp",
+  "bbox": [
+   0,
+   0,
+   458,
+   266
+  ],
+  "bbox_original": [
+   0.0,
+   0.0,
+   416.0,
+   266.0
+  ],
+  "detected_text": "71?2",
+  "raw_text": "71?2",
+  "normalized_text": "71?2",
+  "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Không tìm được 4 góc tin cậy; dùng crop bounding box.",
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "bbox",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 2.689,
+   "detection": 82.178,
+   "rectification": 4.015,
+   "segmentation": 34.158,
+   "recognition": 85.578,
+   "postprocessing": 0.199,
+   "pipeline_total": 211.088
+  },
+  "total_time_ms": 211.088,
+  "candidates": [
+   {
+    "bbox": [
+     0.0,
+     0.0,
+     416.0,
+     266.0
+    ],
+    "bbox_original": [
+     0.0,
+     0.0,
+     416.0,
+     266.0
+    ],
+    "area": 110656.0,
+    "area_ratio": 0.877637,
+    "ratio": 1.5639,
+    "edge_density": 0.0607,
+    "fill_ratio": 0.7723,
+    "text_likeness": 0.6,
+    "score": 0.6666,
+    "source": "edges_close_25x5",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      0.0,
+      0.0,
+      416.0,
+      266.0
+     ],
+     "bbox_original": [
+      0.0,
+      0.0,
+      416.0,
+      266.0
+     ],
+     "area": 110656.0,
+     "area_ratio": 0.877637,
+     "ratio": 1.5639,
+     "edge_density": 0.0607,
+     "fill_ratio": 0.7723,
+     "text_likeness": 0.6,
+     "score": 0.6666,
+     "source": "edges_close_25x5",
+     "passed": true
+    },
+    "rectification_method": "bbox",
+    "rectification_size": [
+     458,
+     266
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 4,
+    "segmentation_score": 0.5138,
+    "characters": [
+     {
+      "label": "7",
+      "status": "OK",
+      "score": 0.9203,
+      "margin": 0.2639,
+      "best_label": "7",
+      "second_label": "T",
+      "second_score": 0.6563,
+      "ranked": [
+       [
+        "7",
+        0.9203
+       ],
+       [
+        "T",
+        0.6563
+       ],
+       [
+        "Z",
+        0.6355
+       ],
+       [
+        "2",
+        0.5163
+       ],
+       [
+        "3",
+        0.4708
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9309,
+      "margin": 0.2745,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.6564,
+      "ranked": [
+       [
+        "1",
+        0.9309
+       ],
+       [
+        "T",
+        0.6564
+       ],
+       [
+        "4",
+        0.6074
+       ],
+       [
+        "3",
+        0.5678
+       ],
+       [
+        "7",
+        0.5114
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.7518,
+      "margin": 0.0274,
+      "best_label": "6",
+      "second_label": "0",
+      "second_score": 0.7244,
+      "ranked": [
+       [
+        "6",
+        0.7518
+       ],
+       [
+        "0",
+        0.7244
+       ],
+       [
+        "8",
+        0.7191
+       ],
+       [
+        "C",
+        0.7126
+       ],
+       [
+        "5",
+        0.6222
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.027 < 0.035 (6 vs 0)"
+     },
+     {
+      "label": "2",
+      "status": "OK",
+      "score": 0.8329,
+      "margin": 0.0481,
+      "best_label": "2",
+      "second_label": "7",
+      "second_score": 0.7847,
+      "ranked": [
+       [
+        "2",
+        0.8329
+       ],
+       [
+        "7",
+        0.7847
+       ],
+       [
+        "Z",
+        0.7442
+       ],
+       [
+        "3",
+        0.6507
+       ],
+       [
+        "T",
+        0.5849
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "71?2",
+     "normalized_text": "71?2",
+     "formatted_text": "71?2",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.859,
+     "min_score": 0.7518,
+     "mean_margin": 0.1535,
+     "confident_ratio": 0.75,
+     "char_count": 4,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 4.015,
+     "segmentation": 34.158,
+     "recognition": 85.578,
+     "postprocessing": 0.199,
+     "attempt_total": 124.124
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "71?2",
+   "normalized_text": "71?2",
+   "formatted_text": "71?2",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": false,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.859,
+   "min_score": 0.7518,
+   "mean_margin": 0.1535,
+   "confident_ratio": 0.75,
+   "char_count": 4,
+   "unknown_count": 1,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "7",
+    "status": "OK",
+    "score": 0.9203,
+    "margin": 0.2639,
+    "second_label": "T",
+    "second_score": 0.6563,
+    "bbox_original": [
+     117.36,
+     22.18,
+     158.87,
+     128.81
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.9309,
+    "margin": 0.2745,
+    "second_label": "T",
+    "second_score": 0.6564,
+    "bbox_original": [
+     174.61,
+     23.62,
+     199.66,
+     119.51
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.7518,
+    "margin": 0.0274,
+    "second_label": "0",
+    "second_score": 0.7244,
+    "bbox_original": [
+     264.07,
+     25.76,
+     304.14,
+     120.94
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "2",
+    "status": "OK",
+    "score": 0.8329,
+    "margin": 0.0481,
+    "second_label": "7",
+    "second_score": 0.7847,
+    "bbox_original": [
+     312.01,
+     26.48,
+     353.52,
+     119.51
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "2.webp": {
+  "status": "SUCCESS",
+  "display_status": "THÀNH CÔNG",
+  "image_path": "data\\user_images\\2.webp",
+  "bbox": [
+   0,
+   189,
+   1000,
+   418
+  ],
+  "bbox_original": [
+   68.0,
+   208.0,
+   940.0,
+   399.0
+  ],
+  "detected_text": "51F-970.22",
+  "raw_text": "51F97022",
+  "normalized_text": "51F97022",
+  "message": "Nhận dạng thành công và chuỗi khớp quy tắc định dạng.",
+  "warnings": [],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 8.938,
+   "detection": 262.429,
+   "rectification": 5.332,
+   "segmentation": 18.603,
+   "recognition": 147.871,
+   "postprocessing": 0.335,
+   "pipeline_total": 449.723
+  },
+  "total_time_ms": 449.723,
+  "candidates": [
+   {
+    "bbox": [
+     68.0,
+     208.0,
+     940.0,
+     399.0
+    ],
+    "bbox_original": [
+     68.0,
+     208.0,
+     940.0,
+     399.0
+    ],
+    "area": 166552.0,
+    "area_ratio": 0.269066,
+    "ratio": 4.5654,
+    "edge_density": 0.0377,
+    "fill_ratio": 0.9449,
+    "text_likeness": 1.0,
+    "score": 0.8239,
+    "source": "edges_quads",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "SUCCESS",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      68.0,
+      208.0,
+      940.0,
+      399.0
+     ],
+     "bbox_original": [
+      68.0,
+      208.0,
+      940.0,
+      399.0
+     ],
+     "area": 166552.0,
+     "area_ratio": 0.269066,
+     "ratio": 4.5654,
+     "edge_density": 0.0377,
+     "fill_ratio": 0.9449,
+     "text_likeness": 1.0,
+     "score": 0.8239,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     881,
+     194
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 8,
+    "segmentation_score": 0.9953,
+    "characters": [
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9259,
+      "margin": 0.1314,
+      "best_label": "5",
+      "second_label": "6",
+      "second_score": 0.7945,
+      "ranked": [
+       [
+        "5",
+        0.9259
+       ],
+       [
+        "6",
+        0.7945
+       ],
+       [
+        "8",
+        0.7463
+       ],
+       [
+        "S",
+        0.7324
+       ],
+       [
+        "0",
+        0.6699
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9381,
+      "margin": 0.2794,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.6587,
+      "ranked": [
+       [
+        "1",
+        0.9381
+       ],
+       [
+        "T",
+        0.6587
+       ],
+       [
+        "4",
+        0.6192
+       ],
+       [
+        "3",
+        0.5576
+       ],
+       [
+        "7",
+        0.5043
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "F",
+      "status": "OK",
+      "score": 0.9041,
+      "margin": 0.1332,
+      "best_label": "F",
+      "second_label": "E",
+      "second_score": 0.7709,
+      "ranked": [
+       [
+        "F",
+        0.9041
+       ],
+       [
+        "E",
+        0.7709
+       ],
+       [
+        "P",
+        0.6396
+       ],
+       [
+        "6",
+        0.5967
+       ],
+       [
+        "8",
+        0.5743
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.9342,
+      "margin": 0.0795,
+      "best_label": "9",
+      "second_label": "0",
+      "second_score": 0.8547,
+      "ranked": [
+       [
+        "9",
+        0.9342
+       ],
+       [
+        "0",
+        0.8547
+       ],
+       [
+        "8",
+        0.7401
+       ],
+       [
+        "6",
+        0.7189
+       ],
+       [
+        "3",
+        0.658
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "7",
+      "status": "OK",
+      "score": 0.8889,
+      "margin": 0.2186,
+      "best_label": "7",
+      "second_label": "2",
+      "second_score": 0.6703,
+      "ranked": [
+       [
+        "7",
+        0.8889
+       ],
+       [
+        "2",
+        0.6703
+       ],
+       [
+        "Z",
+        0.6693
+       ],
+       [
+        "T",
+        0.5866
+       ],
+       [
+        "Y",
+        0.5708
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "0",
+      "status": "OK",
+      "score": 0.957,
+      "margin": 0.1306,
+      "best_label": "0",
+      "second_label": "9",
+      "second_score": 0.8263,
+      "ranked": [
+       [
+        "0",
+        0.957
+       ],
+       [
+        "9",
+        0.8263
+       ],
+       [
+        "8",
+        0.8215
+       ],
+       [
+        "6",
+        0.8189
+       ],
+       [
+        "B",
+        0.776
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "2",
+      "status": "OK",
+      "score": 0.9568,
+      "margin": 0.2588,
+      "best_label": "2",
+      "second_label": "7",
+      "second_score": 0.6981,
+      "ranked": [
+       [
+        "2",
+        0.9568
+       ],
+       [
+        "7",
+        0.6981
+       ],
+       [
+        "Z",
+        0.6719
+       ],
+       [
+        "3",
+        0.6394
+       ],
+       [
+        "9",
+        0.5263
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "2",
+      "status": "OK",
+      "score": 0.9588,
+      "margin": 0.239,
+      "best_label": "2",
+      "second_label": "7",
+      "second_score": 0.7199,
+      "ranked": [
+       [
+        "2",
+        0.9588
+       ],
+       [
+        "7",
+        0.7199
+       ],
+       [
+        "Z",
+        0.713
+       ],
+       [
+        "3",
+        0.6489
+       ],
+       [
+        "9",
+        0.5442
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "51F97022",
+     "normalized_text": "51F97022",
+     "formatted_text": "51F-970.22",
+     "validation": {
+      "is_valid": true,
+      "issues": [],
+      "checks": {
+       "no_unknown": true,
+       "length": true,
+       "alnum": true,
+       "pattern": true,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": "^[0-9]{2}[A-Z]{1,2}[0-9]{4,5}$"
+     },
+     "mean_score": 0.933,
+     "min_score": 0.8889,
+     "mean_margin": 0.1838,
+     "confident_ratio": 1.0,
+     "char_count": 8,
+     "unknown_count": 0,
+     "status": "SUCCESS",
+     "message": "Nhận dạng thành công và chuỗi khớp quy tắc định dạng.",
+     "warnings": []
+    },
+    "timings_ms": {
+     "rectification": 5.332,
+     "segmentation": 18.603,
+     "recognition": 147.871,
+     "postprocessing": 0.335,
+     "attempt_total": 172.356
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "51F97022",
+   "normalized_text": "51F97022",
+   "formatted_text": "51F-970.22",
+   "validation": {
+    "is_valid": true,
+    "issues": [],
+    "checks": {
+     "no_unknown": true,
+     "length": true,
+     "alnum": true,
+     "pattern": true,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": "^[0-9]{2}[A-Z]{1,2}[0-9]{4,5}$"
+   },
+   "mean_score": 0.933,
+   "min_score": 0.8889,
+   "mean_margin": 0.1838,
+   "confident_ratio": 1.0,
+   "char_count": 8,
+   "unknown_count": 0,
+   "status": "SUCCESS",
+   "message": "Nhận dạng thành công và chuỗi khớp quy tắc định dạng.",
+   "warnings": []
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9259,
+    "margin": 0.1314,
+    "second_label": "6",
+    "second_score": 0.7945,
+    "bbox_original": [
+     102.34,
+     228.14,
+     180.9,
+     383.11
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.9381,
+    "margin": 0.2794,
+    "second_label": "T",
+    "second_score": 0.6587,
+    "bbox_original": [
+     201.57,
+     228.14,
+     242.91,
+     385.88
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "F",
+    "status": "OK",
+    "score": 0.9041,
+    "margin": 0.1332,
+    "second_label": "E",
+    "second_score": 0.7709,
+    "bbox_original": [
+     284.26,
+     228.14,
+     364.19,
+     385.88
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.9342,
+    "margin": 0.0795,
+    "second_label": "0",
+    "second_score": 0.8547,
+    "bbox_original": [
+     434.47,
+     230.91,
+     514.4,
+     383.11
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 0,
+    "label": "7",
+    "status": "OK",
+    "score": 0.8889,
+    "margin": 0.2186,
+    "second_label": "2",
+    "second_score": 0.6703,
+    "bbox_original": [
+     528.18,
+     228.14,
+     606.74,
+     383.11
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 0,
+    "label": "0",
+    "status": "OK",
+    "score": 0.957,
+    "margin": 0.1306,
+    "second_label": "9",
+    "second_score": 0.8263,
+    "bbox_original": [
+     617.76,
+     229.52,
+     697.69,
+     383.11
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 0,
+    "label": "2",
+    "status": "OK",
+    "score": 0.9568,
+    "margin": 0.2588,
+    "second_label": "7",
+    "second_score": 0.6981,
+    "bbox_original": [
+     743.17,
+     229.52,
+     818.97,
+     383.11
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 0,
+    "label": "2",
+    "status": "OK",
+    "score": 0.9588,
+    "margin": 0.239,
+    "second_label": "7",
+    "second_score": 0.7199,
+    "bbox_original": [
+     829.99,
+     229.52,
+     905.79,
+     383.11
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "3.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\3.webp",
+  "bbox": [
+   82,
+   79,
+   407,
+   299
+  ],
+  "bbox_original": [
+   109.0,
+   97.0,
+   380.0,
+   281.0
+  ],
+  "detected_text": "?9?199999",
+  "raw_text": "?9?199999",
+  "normalized_text": "?9?199999",
+  "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 3.444,
+   "detection": 85.939,
+   "rectification": 4.113,
+   "segmentation": 61.588,
+   "recognition": 202.188,
+   "postprocessing": 0.061,
+   "pipeline_total": 361.022
+  },
+  "total_time_ms": 361.022,
+  "candidates": [
+   {
+    "bbox": [
+     109.0,
+     97.0,
+     380.0,
+     281.0
+    ],
+    "bbox_original": [
+     109.0,
+     97.0,
+     380.0,
+     281.0
+    ],
+    "area": 49864.0,
+    "area_ratio": 0.288215,
+    "ratio": 1.4728,
+    "edge_density": 0.0709,
+    "fill_ratio": 0.9237,
+    "text_likeness": 1.0,
+    "score": 0.8634,
+    "source": "edges_quads",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      109.0,
+      97.0,
+      380.0,
+      281.0
+     ],
+     "bbox_original": [
+      109.0,
+      97.0,
+      380.0,
+      281.0
+     ],
+     "area": 49864.0,
+     "area_ratio": 0.288215,
+     "ratio": 1.4728,
+     "edge_density": 0.0709,
+     "fill_ratio": 0.9237,
+     "text_likeness": 1.0,
+     "score": 0.8634,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     324,
+     219
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 9,
+    "segmentation_score": 0.9739,
+    "characters": [
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8287,
+      "margin": 0.0221,
+      "best_label": "2",
+      "second_label": "Z",
+      "second_score": 0.8066,
+      "ranked": [
+       [
+        "2",
+        0.8287
+       ],
+       [
+        "Z",
+        0.8066
+       ],
+       [
+        "7",
+        0.7491
+       ],
+       [
+        "3",
+        0.6338
+       ],
+       [
+        "T",
+        0.5295
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.022 < 0.035 (2 vs Z)"
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8785,
+      "margin": 0.0659,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8126,
+      "ranked": [
+       [
+        "9",
+        0.8785
+       ],
+       [
+        "8",
+        0.8126
+       ],
+       [
+        "3",
+        0.7589
+       ],
+       [
+        "5",
+        0.7376
+       ],
+       [
+        "0",
+        0.7282
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.7941,
+      "margin": 0.0328,
+      "best_label": "C",
+      "second_label": "L",
+      "second_score": 0.7613,
+      "ranked": [
+       [
+        "C",
+        0.7941
+       ],
+       [
+        "L",
+        0.7613
+       ],
+       [
+        "6",
+        0.7595
+       ],
+       [
+        "E",
+        0.7397
+       ],
+       [
+        "0",
+        0.7109
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.033 < 0.035 (C vs L)"
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9172,
+      "margin": 0.1891,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.7281,
+      "ranked": [
+       [
+        "1",
+        0.9172
+       ],
+       [
+        "T",
+        0.7281
+       ],
+       [
+        "4",
+        0.6121
+       ],
+       [
+        "3",
+        0.5822
+       ],
+       [
+        "7",
+        0.5321
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8161,
+      "margin": 0.0688,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7473,
+      "ranked": [
+       [
+        "9",
+        0.8161
+       ],
+       [
+        "8",
+        0.7473
+       ],
+       [
+        "3",
+        0.6969
+       ],
+       [
+        "5",
+        0.6415
+       ],
+       [
+        "6",
+        0.6329
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8481,
+      "margin": 0.0649,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7832,
+      "ranked": [
+       [
+        "9",
+        0.8481
+       ],
+       [
+        "8",
+        0.7832
+       ],
+       [
+        "3",
+        0.714
+       ],
+       [
+        "5",
+        0.683
+       ],
+       [
+        "6",
+        0.6643
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8221,
+      "margin": 0.0422,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7799,
+      "ranked": [
+       [
+        "9",
+        0.8221
+       ],
+       [
+        "8",
+        0.7799
+       ],
+       [
+        "3",
+        0.7466
+       ],
+       [
+        "1",
+        0.6991
+       ],
+       [
+        "5",
+        0.6766
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8722,
+      "margin": 0.0697,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8025,
+      "ranked": [
+       [
+        "9",
+        0.8722
+       ],
+       [
+        "8",
+        0.8025
+       ],
+       [
+        "3",
+        0.7438
+       ],
+       [
+        "6",
+        0.6984
+       ],
+       [
+        "5",
+        0.6935
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8827,
+      "margin": 0.0565,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8262,
+      "ranked": [
+       [
+        "9",
+        0.8827
+       ],
+       [
+        "8",
+        0.8262
+       ],
+       [
+        "3",
+        0.7753
+       ],
+       [
+        "5",
+        0.7264
+       ],
+       [
+        "6",
+        0.7239
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "?9?199999",
+     "normalized_text": "?9?199999",
+     "formatted_text": "?9?199999",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8511,
+     "min_score": 0.7941,
+     "mean_margin": 0.068,
+     "confident_ratio": 0.7778,
+     "char_count": 9,
+     "unknown_count": 2,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 4.113,
+     "segmentation": 61.588,
+     "recognition": 202.188,
+     "postprocessing": 0.061,
+     "attempt_total": 268.192
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "?9?199999",
+   "normalized_text": "?9?199999",
+   "formatted_text": "?9?199999",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8511,
+   "min_score": 0.7941,
+   "mean_margin": 0.068,
+   "confident_ratio": 0.7778,
+   "char_count": 9,
+   "unknown_count": 2,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8287,
+    "margin": 0.0221,
+    "second_label": "Z",
+    "second_score": 0.8066,
+    "bbox_original": [
+     152.08,
+     101.38,
+     189.15,
+     174.1
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8785,
+    "margin": 0.0659,
+    "second_label": "8",
+    "second_score": 0.8126,
+    "bbox_original": [
+     191.18,
+     102.39,
+     226.22,
+     174.1
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.7941,
+    "margin": 0.0328,
+    "second_label": "L",
+    "second_score": 0.7613,
+    "bbox_original": [
+     266.34,
+     102.9,
+     299.85,
+     176.14
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.9172,
+    "margin": 0.1891,
+    "second_label": "T",
+    "second_score": 0.7281,
+    "bbox_original": [
+     310.52,
+     103.41,
+     334.89,
+     177.66
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8161,
+    "margin": 0.0688,
+    "second_label": "8",
+    "second_score": 0.7473,
+    "bbox_original": [
+     121.61,
+     185.29,
+     159.19,
+     267.17
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8481,
+    "margin": 0.0649,
+    "second_label": "8",
+    "second_score": 0.7832,
+    "bbox_original": [
+     167.82,
+     186.82,
+     205.4,
+     269.21
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8221,
+    "margin": 0.0422,
+    "second_label": "8",
+    "second_score": 0.7799,
+    "bbox_original": [
+     214.54,
+     187.83,
+     251.61,
+     271.24
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8722,
+    "margin": 0.0697,
+    "second_label": "8",
+    "second_score": 0.8025,
+    "bbox_original": [
+     281.57,
+     189.36,
+     316.61,
+     274.29
+    ]
+   },
+   {
+    "order": 8,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8827,
+    "margin": 0.0565,
+    "second_label": "8",
+    "second_score": 0.8262,
+    "bbox_original": [
+     329.81,
+     190.38,
+     365.87,
+     276.83
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "4.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\4.webp",
+  "bbox": [
+   84,
+   219,
+   891,
+   798
+  ],
+  "bbox_original": [
+   151.0,
+   267.0,
+   824.0,
+   750.0
+  ],
+  "detected_text": "59?183159",
+  "raw_text": "59?183159",
+  "normalized_text": "59?183159",
+  "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 17.548,
+   "detection": 704.301,
+   "rectification": 18.009,
+   "segmentation": 157.301,
+   "recognition": 635.2,
+   "postprocessing": 0.104,
+   "pipeline_total": 1543.253
+  },
+  "total_time_ms": 1543.253,
+  "candidates": [
+   {
+    "bbox": [
+     151.0,
+     267.0,
+     824.0,
+     750.0
+    ],
+    "bbox_original": [
+     151.0,
+     267.0,
+     824.0,
+     750.0
+    ],
+    "area": 325059.0,
+    "area_ratio": 0.352712,
+    "ratio": 1.3934,
+    "edge_density": 0.0298,
+    "fill_ratio": 0.9759,
+    "text_likeness": 1.0,
+    "score": 0.7993,
+    "source": "edges_quads",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      151.0,
+      267.0,
+      824.0,
+      750.0
+     ],
+     "bbox_original": [
+      151.0,
+      267.0,
+      824.0,
+      750.0
+     ],
+     "area": 325059.0,
+     "area_ratio": 0.352712,
+     "ratio": 1.3934,
+     "edge_density": 0.0298,
+     "fill_ratio": 0.9759,
+     "text_likeness": 1.0,
+     "score": 0.7993,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     721,
+     578
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 9,
+    "segmentation_score": 0.995,
+    "characters": [
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9442,
+      "margin": 0.1716,
+      "best_label": "5",
+      "second_label": "6",
+      "second_score": 0.7726,
+      "ranked": [
+       [
+        "5",
+        0.9442
+       ],
+       [
+        "6",
+        0.7726
+       ],
+       [
+        "8",
+        0.7624
+       ],
+       [
+        "S",
+        0.7578
+       ],
+       [
+        "3",
+        0.7227
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.9054,
+      "margin": 0.0801,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8253,
+      "ranked": [
+       [
+        "9",
+        0.9054
+       ],
+       [
+        "8",
+        0.8253
+       ],
+       [
+        "3",
+        0.7649
+       ],
+       [
+        "0",
+        0.7506
+       ],
+       [
+        "5",
+        0.7369
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8143,
+      "margin": 0.0284,
+      "best_label": "T",
+      "second_label": "1",
+      "second_score": 0.7859,
+      "ranked": [
+       [
+        "T",
+        0.8143
+       ],
+       [
+        "1",
+        0.7859
+       ],
+       [
+        "7",
+        0.7349
+       ],
+       [
+        "Y",
+        0.5977
+       ],
+       [
+        "Z",
+        0.4719
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.028 < 0.035 (T vs 1)"
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.8966,
+      "margin": 0.1424,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.7542,
+      "ranked": [
+       [
+        "1",
+        0.8966
+       ],
+       [
+        "T",
+        0.7542
+       ],
+       [
+        "4",
+        0.6154
+       ],
+       [
+        "7",
+        0.5706
+       ],
+       [
+        "3",
+        0.5667
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "8",
+      "status": "OK",
+      "score": 0.8773,
+      "margin": 0.04,
+      "best_label": "8",
+      "second_label": "9",
+      "second_score": 0.8373,
+      "ranked": [
+       [
+        "8",
+        0.8773
+       ],
+       [
+        "9",
+        0.8373
+       ],
+       [
+        "3",
+        0.8107
+       ],
+       [
+        "6",
+        0.7693
+       ],
+       [
+        "0",
+        0.7237
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.9265,
+      "margin": 0.1452,
+      "best_label": "3",
+      "second_label": "9",
+      "second_score": 0.7813,
+      "ranked": [
+       [
+        "3",
+        0.9265
+       ],
+       [
+        "9",
+        0.7813
+       ],
+       [
+        "8",
+        0.7752
+       ],
+       [
+        "2",
+        0.7025
+       ],
+       [
+        "5",
+        0.6739
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9701,
+      "margin": 0.2958,
+      "best_label": "1",
+      "second_label": "4",
+      "second_score": 0.6743,
+      "ranked": [
+       [
+        "1",
+        0.9701
+       ],
+       [
+        "4",
+        0.6743
+       ],
+       [
+        "T",
+        0.6548
+       ],
+       [
+        "3",
+        0.6373
+       ],
+       [
+        "2",
+        0.558
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.947,
+      "margin": 0.1745,
+      "best_label": "5",
+      "second_label": "6",
+      "second_score": 0.7725,
+      "ranked": [
+       [
+        "5",
+        0.947
+       ],
+       [
+        "6",
+        0.7725
+       ],
+       [
+        "8",
+        0.7662
+       ],
+       [
+        "S",
+        0.7523
+       ],
+       [
+        "3",
+        0.7331
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8808,
+      "margin": 0.0803,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8005,
+      "ranked": [
+       [
+        "9",
+        0.8808
+       ],
+       [
+        "8",
+        0.8005
+       ],
+       [
+        "3",
+        0.7303
+       ],
+       [
+        "0",
+        0.715
+       ],
+       [
+        "5",
+        0.7138
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "59?183159",
+     "normalized_text": "59?183159",
+     "formatted_text": "59?183159",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.9069,
+     "min_score": 0.8143,
+     "mean_margin": 0.1287,
+     "confident_ratio": 0.8889,
+     "char_count": 9,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 18.009,
+     "segmentation": 157.301,
+     "recognition": 635.2,
+     "postprocessing": 0.104,
+     "attempt_total": 811.485
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "59?183159",
+   "normalized_text": "59?183159",
+   "formatted_text": "59?183159",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.9069,
+   "min_score": 0.8143,
+   "mean_margin": 0.1287,
+   "confident_ratio": 0.8889,
+   "char_count": 9,
+   "unknown_count": 1,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9442,
+    "margin": 0.1716,
+    "second_label": "6",
+    "second_score": 0.7726,
+    "bbox_original": [
+     247.61,
+     284.45,
+     338.98,
+     495.49
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.9054,
+    "margin": 0.0801,
+    "second_label": "8",
+    "second_score": 0.8253,
+    "bbox_original": [
+     352.52,
+     287.84,
+     442.77,
+     496.61
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8143,
+    "margin": 0.0284,
+    "second_label": "1",
+    "second_score": 0.7859,
+    "bbox_original": [
+     557.84,
+     291.22,
+     642.45,
+     500.0
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.8966,
+    "margin": 0.1424,
+    "second_label": "T",
+    "second_score": 0.7542,
+    "bbox_original": [
+     658.24,
+     293.48,
+     718.04,
+     502.26
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "8",
+    "status": "OK",
+    "score": 0.8773,
+    "margin": 0.04,
+    "second_label": "9",
+    "second_score": 0.8373,
+    "bbox_original": [
+     181.05,
+     530.47,
+     269.04,
+     732.47
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "3",
+    "status": "OK",
+    "score": 0.9265,
+    "margin": 0.1452,
+    "second_label": "9",
+    "second_score": 0.7813,
+    "bbox_original": [
+     305.14,
+     531.6,
+     396.52,
+     735.86
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "1",
+    "status": "OK",
+    "score": 0.9701,
+    "margin": 0.2958,
+    "second_label": "4",
+    "second_score": 0.6743,
+    "bbox_original": [
+     432.62,
+     531.6,
+     495.79,
+     738.12
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "5",
+    "status": "OK",
+    "score": 0.947,
+    "margin": 0.1745,
+    "second_label": "6",
+    "second_score": 0.7725,
+    "bbox_original": [
+     589.43,
+     532.73,
+     678.55,
+     739.25
+    ]
+   },
+   {
+    "order": 8,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8808,
+    "margin": 0.0803,
+    "second_label": "8",
+    "second_score": 0.8005,
+    "bbox_original": [
+     714.65,
+     536.11,
+     800.39,
+     740.37
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "5.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\5.webp",
+  "bbox": [
+   28,
+   193,
+   414,
+   465
+  ],
+  "bbox_original": [
+   60.0,
+   216.0,
+   382.0,
+   442.0
+  ],
+  "detected_text": "59?Z???96",
+  "raw_text": "59?Z???96",
+  "normalized_text": "59?Z???96",
+  "message": "Có 4 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Không tìm được 4 góc tin cậy; dùng crop bounding box.",
+   "Số ký tự mỗi dòng không điển hình: [1, 4].",
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 10.271,
+   "detection": 234.924,
+   "rectification": 9.817,
+   "segmentation": 111.312,
+   "recognition": 985.23,
+   "postprocessing": 0.214,
+   "pipeline_total": 1361.783
+  },
+  "total_time_ms": 1361.783,
+  "candidates": [
+   {
+    "bbox": [
+     60.0,
+     216.0,
+     382.0,
+     442.0
+    ],
+    "bbox_original": [
+     60.0,
+     216.0,
+     382.0,
+     442.0
+    ],
+    "area": 72772.0,
+    "area_ratio": 0.242923,
+    "ratio": 1.4248,
+    "edge_density": 0.0591,
+    "fill_ratio": 0.9721,
+    "text_likeness": 1.0,
+    "score": 0.8639,
+    "source": "edges_quads",
+    "passed": true
+   },
+   {
+    "bbox": [
+     154.0,
+     153.0,
+     225.0,
+     178.0
+    ],
+    "bbox_original": [
+     154.0,
+     153.0,
+     225.0,
+     178.0
+    ],
+    "area": 1775.0,
+    "area_ratio": 0.005925,
+    "ratio": 2.84,
+    "edge_density": 0.1262,
+    "fill_ratio": 0.5797,
+    "text_likeness": 1.0,
+    "score": 0.6068,
+    "source": "edges_quads",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      60.0,
+      216.0,
+      382.0,
+      442.0
+     ],
+     "bbox_original": [
+      60.0,
+      216.0,
+      382.0,
+      442.0
+     ],
+     "area": 72772.0,
+     "area_ratio": 0.242923,
+     "ratio": 1.4248,
+     "edge_density": 0.0591,
+     "fill_ratio": 0.9721,
+     "text_likeness": 1.0,
+     "score": 0.8639,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     385,
+     271
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 9,
+    "segmentation_score": 0.9641,
+    "characters": [
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9077,
+      "margin": 0.1672,
+      "best_label": "5",
+      "second_label": "6",
+      "second_score": 0.7405,
+      "ranked": [
+       [
+        "5",
+        0.9077
+       ],
+       [
+        "6",
+        0.7405
+       ],
+       [
+        "8",
+        0.7364
+       ],
+       [
+        "S",
+        0.7053
+       ],
+       [
+        "3",
+        0.6956
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8981,
+      "margin": 0.0949,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8032,
+      "ranked": [
+       [
+        "9",
+        0.8981
+       ],
+       [
+        "8",
+        0.8032
+       ],
+       [
+        "3",
+        0.7354
+       ],
+       [
+        "0",
+        0.7089
+       ],
+       [
+        "6",
+        0.7042
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.855,
+      "margin": 0.007,
+      "best_label": "0",
+      "second_label": "8",
+      "second_score": 0.8481,
+      "ranked": [
+       [
+        "0",
+        0.855
+       ],
+       [
+        "8",
+        0.8481
+       ],
+       [
+        "9",
+        0.8192
+       ],
+       [
+        "6",
+        0.7815
+       ],
+       [
+        "3",
+        0.7198
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.007 < 0.035 (0 vs 8)"
+     },
+     {
+      "label": "Z",
+      "status": "OK",
+      "score": 0.7514,
+      "margin": 0.2717,
+      "best_label": "Z",
+      "second_label": "2",
+      "second_score": 0.4797,
+      "ranked": [
+       [
+        "Z",
+        0.7514
+       ],
+       [
+        "2",
+        0.4797
+       ],
+       [
+        "X",
+        0.4425
+       ],
+       [
+        "7",
+        0.4417
+       ],
+       [
+        "8",
+        0.44
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8913,
+      "margin": 0.0304,
+      "best_label": "6",
+      "second_label": "8",
+      "second_score": 0.8609,
+      "ranked": [
+       [
+        "6",
+        0.8913
+       ],
+       [
+        "8",
+        0.8609
+       ],
+       [
+        "5",
+        0.8071
+       ],
+       [
+        "0",
+        0.7077
+       ],
+       [
+        "9",
+        0.7074
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.030 < 0.035 (6 vs 8)"
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8916,
+      "margin": 0.033,
+      "best_label": "6",
+      "second_label": "8",
+      "second_score": 0.8586,
+      "ranked": [
+       [
+        "6",
+        0.8916
+       ],
+       [
+        "8",
+        0.8586
+       ],
+       [
+        "5",
+        0.8081
+       ],
+       [
+        "0",
+        0.7053
+       ],
+       [
+        "9",
+        0.7044
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.033 < 0.035 (6 vs 8)"
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8896,
+      "margin": 0.0321,
+      "best_label": "6",
+      "second_label": "8",
+      "second_score": 0.8575,
+      "ranked": [
+       [
+        "6",
+        0.8896
+       ],
+       [
+        "8",
+        0.8575
+       ],
+       [
+        "5",
+        0.8086
+       ],
+       [
+        "9",
+        0.7052
+       ],
+       [
+        "0",
+        0.7043
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.032 < 0.035 (6 vs 8)"
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.9021,
+      "margin": 0.1043,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7979,
+      "ranked": [
+       [
+        "9",
+        0.9021
+       ],
+       [
+        "8",
+        0.7979
+       ],
+       [
+        "3",
+        0.7266
+       ],
+       [
+        "0",
+        0.7172
+       ],
+       [
+        "6",
+        0.6999
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "6",
+      "status": "OK",
+      "score": 0.7937,
+      "margin": 0.0669,
+      "best_label": "6",
+      "second_label": "8",
+      "second_score": 0.7268,
+      "ranked": [
+       [
+        "6",
+        0.7937
+       ],
+       [
+        "8",
+        0.7268
+       ],
+       [
+        "5",
+        0.7226
+       ],
+       [
+        "0",
+        0.7039
+       ],
+       [
+        "9",
+        0.6317
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "59?Z???96",
+     "normalized_text": "59?Z???96",
+     "formatted_text": "59?Z???96",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8645,
+     "min_score": 0.7514,
+     "mean_margin": 0.0897,
+     "confident_ratio": 0.5556,
+     "char_count": 9,
+     "unknown_count": 4,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 4 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 8.16,
+     "segmentation": 99.662,
+     "recognition": 643.861,
+     "postprocessing": 0.12,
+     "attempt_total": 752.687
+    }
+   },
+   {
+    "index": 1,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      154.0,
+      153.0,
+      225.0,
+      178.0
+     ],
+     "bbox_original": [
+      154.0,
+      153.0,
+      225.0,
+      178.0
+     ],
+     "area": 1775.0,
+     "area_ratio": 0.005925,
+     "ratio": 2.84,
+     "edge_density": 0.1262,
+     "fill_ratio": 0.5797,
+     "text_likeness": 1.0,
+     "score": 0.6068,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "bbox",
+    "rectification_size": [
+     85,
+     29
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 5,
+    "segmentation_score": 0.4652,
+    "characters": [
+     {
+      "label": "S",
+      "status": "OK",
+      "score": 0.6217,
+      "margin": 0.0491,
+      "best_label": "S",
+      "second_label": "N",
+      "second_score": 0.5726,
+      "ranked": [
+       [
+        "S",
+        0.6217
+       ],
+       [
+        "N",
+        0.5726
+       ],
+       [
+        "5",
+        0.5516
+       ],
+       [
+        "6",
+        0.4962
+       ],
+       [
+        "1",
+        0.4862
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.7798,
+      "margin": 0.0817,
+      "best_label": "1",
+      "second_label": "3",
+      "second_score": 0.698,
+      "ranked": [
+       [
+        "1",
+        0.7798
+       ],
+       [
+        "3",
+        0.698
+       ],
+       [
+        "T",
+        0.645
+       ],
+       [
+        "8",
+        0.6115
+       ],
+       [
+        "4",
+        0.5949
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.7965,
+      "margin": 0.0002,
+      "best_label": "K",
+      "second_label": "A",
+      "second_score": 0.7963,
+      "ranked": [
+       [
+        "K",
+        0.7965
+       ],
+       [
+        "A",
+        0.7963
+       ],
+       [
+        "4",
+        0.7627
+       ],
+       [
+        "R",
+        0.7357
+       ],
+       [
+        "M",
+        0.709
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.000 < 0.035 (K vs A)"
+     },
+     {
+      "label": "M",
+      "status": "OK",
+      "score": 0.7827,
+      "margin": 0.0405,
+      "best_label": "M",
+      "second_label": "V",
+      "second_score": 0.7422,
+      "ranked": [
+       [
+        "M",
+        0.7827
+       ],
+       [
+        "V",
+        0.7422
+       ],
+       [
+        "U",
+        0.6772
+       ],
+       [
+        "H",
+        0.6695
+       ],
+       [
+        "4",
+        0.6668
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.8875,
+      "margin": 0.2437,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.6437,
+      "ranked": [
+       [
+        "1",
+        0.8875
+       ],
+       [
+        "T",
+        0.6437
+       ],
+       [
+        "2",
+        0.6312
+       ],
+       [
+        "3",
+        0.6201
+       ],
+       [
+        "X",
+        0.5859
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "S1?M1",
+     "normalized_text": "S1?M1",
+     "formatted_text": "S1?M1",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.7736,
+     "min_score": 0.6217,
+     "mean_margin": 0.083,
+     "confident_ratio": 0.8,
+     "char_count": 5,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 1.657,
+     "segmentation": 11.649,
+     "recognition": 341.369,
+     "postprocessing": 0.094,
+     "attempt_total": 355.322
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "59?Z???96",
+   "normalized_text": "59?Z???96",
+   "formatted_text": "59?Z???96",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8645,
+   "min_score": 0.7514,
+   "mean_margin": 0.0897,
+   "confident_ratio": 0.5556,
+   "char_count": 9,
+   "unknown_count": 4,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 4 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9077,
+    "margin": 0.1672,
+    "second_label": "6",
+    "second_score": 0.7405,
+    "bbox_original": [
+     105.2,
+     226.21,
+     145.61,
+     322.81
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8981,
+    "margin": 0.0949,
+    "second_label": "8",
+    "second_score": 0.8032,
+    "bbox_original": [
+     154.66,
+     226.21,
+     194.46,
+     322.81
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.855,
+    "margin": 0.007,
+    "second_label": "8",
+    "second_score": 0.8481,
+    "bbox_original": [
+     251.76,
+     225.0,
+     292.77,
+     323.42
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "Z",
+    "status": "OK",
+    "score": 0.7514,
+    "margin": 0.2717,
+    "second_label": "2",
+    "second_score": 0.4797,
+    "bbox_original": [
+     300.01,
+     256.4,
+     341.02,
+     324.02
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8913,
+    "margin": 0.0304,
+    "second_label": "8",
+    "second_score": 0.8609,
+    "bbox_original": [
+     75.65,
+     340.32,
+     114.25,
+     433.31
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8916,
+    "margin": 0.033,
+    "second_label": "8",
+    "second_score": 0.8586,
+    "bbox_original": [
+     134.75,
+     340.32,
+     173.96,
+     433.31
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8896,
+    "margin": 0.0321,
+    "second_label": "8",
+    "second_score": 0.8575,
+    "bbox_original": [
+     195.07,
+     340.32,
+     233.67,
+     433.31
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.9021,
+    "margin": 0.1043,
+    "second_label": "8",
+    "second_score": 0.7979,
+    "bbox_original": [
+     270.46,
+     340.93,
+     309.66,
+     433.91
+    ]
+   },
+   {
+    "order": 8,
+    "row_index": 1,
+    "label": "6",
+    "status": "OK",
+    "score": 0.7937,
+    "margin": 0.0669,
+    "second_label": "8",
+    "second_score": 0.7268,
+    "bbox_original": [
+     328.36,
+     343.34,
+     368.77,
+     433.91
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "6.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\6.webp",
+  "bbox": [
+   82,
+   6,
+   396,
+   230
+  ],
+  "bbox_original": [
+   108.0,
+   25.0,
+   370.0,
+   213.0
+  ],
+  "detected_text": "73T9",
+  "raw_text": "73T9",
+  "normalized_text": "73T9",
+  "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+  "warnings": [
+   "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 4.812,
+   "detection": 100.782,
+   "rectification": 8.349,
+   "segmentation": 99.295,
+   "recognition": 278.942,
+   "postprocessing": 0.12,
+   "pipeline_total": 497.829
+  },
+  "total_time_ms": 497.829,
+  "candidates": [
+   {
+    "bbox": [
+     108.0,
+     25.0,
+     370.0,
+     213.0
+    ],
+    "bbox_original": [
+     108.0,
+     25.0,
+     370.0,
+     213.0
+    ],
+    "area": 49256.0,
+    "area_ratio": 0.451807,
+    "ratio": 1.3936,
+    "edge_density": 0.0551,
+    "fill_ratio": 0.9799,
+    "text_likeness": 0.4,
+    "score": 0.7014,
+    "source": "edges_quads",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      108.0,
+      25.0,
+      370.0,
+      213.0
+     ],
+     "bbox_original": [
+      108.0,
+      25.0,
+      370.0,
+      213.0
+     ],
+     "area": 49256.0,
+     "area_ratio": 0.451807,
+     "ratio": 1.3936,
+     "edge_density": 0.0551,
+     "fill_ratio": 0.9799,
+     "text_likeness": 0.4,
+     "score": 0.7014,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     313,
+     216
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 4,
+    "segmentation_score": 0.5331,
+    "characters": [
+     {
+      "label": "7",
+      "status": "OK",
+      "score": 0.9404,
+      "margin": 0.2149,
+      "best_label": "7",
+      "second_label": "T",
+      "second_score": 0.7255,
+      "ranked": [
+       [
+        "7",
+        0.9404
+       ],
+       [
+        "T",
+        0.7255
+       ],
+       [
+        "Z",
+        0.6392
+       ],
+       [
+        "2",
+        0.5659
+       ],
+       [
+        "3",
+        0.4972
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.879,
+      "margin": 0.1184,
+      "best_label": "3",
+      "second_label": "1",
+      "second_score": 0.7606,
+      "ranked": [
+       [
+        "3",
+        0.879
+       ],
+       [
+        "1",
+        0.7606
+       ],
+       [
+        "9",
+        0.7512
+       ],
+       [
+        "8",
+        0.7276
+       ],
+       [
+        "2",
+        0.6866
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "T",
+      "status": "OK",
+      "score": 0.661,
+      "margin": 0.1223,
+      "best_label": "T",
+      "second_label": "7",
+      "second_score": 0.5387,
+      "ranked": [
+       [
+        "T",
+        0.661
+       ],
+       [
+        "7",
+        0.5387
+       ],
+       [
+        "X",
+        0.4967
+       ],
+       [
+        "4",
+        0.4882
+       ],
+       [
+        "8",
+        0.4861
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8726,
+      "margin": 0.0833,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7893,
+      "ranked": [
+       [
+        "9",
+        0.8726
+       ],
+       [
+        "8",
+        0.7893
+       ],
+       [
+        "3",
+        0.7355
+       ],
+       [
+        "5",
+        0.6914
+       ],
+       [
+        "6",
+        0.6879
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "73T9",
+     "normalized_text": "73T9",
+     "formatted_text": "73T9",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": true,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8382,
+     "min_score": 0.661,
+     "mean_margin": 0.1347,
+     "confident_ratio": 1.0,
+     "char_count": 4,
+     "unknown_count": 0,
+     "status": "LOW_CONFIDENCE",
+     "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+     "warnings": [
+      "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 8.349,
+     "segmentation": 99.295,
+     "recognition": 278.942,
+     "postprocessing": 0.12,
+     "attempt_total": 387.534
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "73T9",
+   "normalized_text": "73T9",
+   "formatted_text": "73T9",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": true,
+     "length": false,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8382,
+   "min_score": 0.661,
+   "mean_margin": 0.1347,
+   "confident_ratio": 1.0,
+   "char_count": 4,
+   "unknown_count": 0,
+   "status": "LOW_CONFIDENCE",
+   "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+   "warnings": [
+    "Độ dài chuỗi 4 không nằm trong khoảng 7-9.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "7",
+    "status": "OK",
+    "score": 0.9404,
+    "margin": 0.2149,
+    "second_label": "T",
+    "second_score": 0.7255,
+    "bbox_original": [
+     136.95,
+     32.65,
+     169.33,
+     112.74
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "3",
+    "status": "OK",
+    "score": 0.879,
+    "margin": 0.1184,
+    "second_label": "1",
+    "second_score": 0.7606,
+    "bbox_original": [
+     178.16,
+     35.11,
+     212.51,
+     115.69
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "T",
+    "status": "OK",
+    "score": 0.661,
+    "margin": 0.1223,
+    "second_label": "7",
+    "second_score": 0.5387,
+    "bbox_original": [
+     267.46,
+     34.62,
+     298.86,
+     115.69
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8726,
+    "margin": 0.0833,
+    "second_label": "8",
+    "second_score": 0.7893,
+    "bbox_original": [
+     308.67,
+     33.64,
+     341.05,
+     114.71
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "7.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\7.webp",
+  "bbox": [
+   92,
+   183,
+   391,
+   247
+  ],
+  "bbox_original": [
+   117.0,
+   188.0,
+   366.0,
+   242.0
+  ],
+  "detected_text": "30?B3223",
+  "raw_text": "30?B3223",
+  "normalized_text": "30?B3223",
+  "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Không tìm được 4 góc tin cậy; dùng hiệu chỉnh xoay nhẹ (3.6°).",
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "deskew",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 7.281,
+   "detection": 174.512,
+   "rectification": 5.027,
+   "segmentation": 30.424,
+   "recognition": 572.972,
+   "postprocessing": 0.113,
+   "pipeline_total": 796.994
+  },
+  "total_time_ms": 796.994,
+  "candidates": [
+   {
+    "bbox": [
+     117.0,
+     188.0,
+     366.0,
+     242.0
+    ],
+    "bbox_original": [
+     117.0,
+     188.0,
+     366.0,
+     242.0
+    ],
+    "area": 13446.0,
+    "area_ratio": 0.095835,
+    "ratio": 4.6111,
+    "edge_density": 0.1377,
+    "fill_ratio": 0.6277,
+    "text_likeness": 1.0,
+    "score": 0.9196,
+    "source": "tophat",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      117.0,
+      188.0,
+      366.0,
+      242.0
+     ],
+     "bbox_original": [
+      117.0,
+      188.0,
+      366.0,
+      242.0
+     ],
+     "area": 13446.0,
+     "area_ratio": 0.095835,
+     "ratio": 4.6111,
+     "edge_density": 0.1377,
+     "fill_ratio": 0.6277,
+     "text_likeness": 1.0,
+     "score": 0.9196,
+     "source": "tophat",
+     "passed": true
+    },
+    "rectification_method": "deskew",
+    "rectification_size": [
+     303,
+     83
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 8,
+    "segmentation_score": 0.9899,
+    "characters": [
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.835,
+      "margin": 0.1553,
+      "best_label": "3",
+      "second_label": "2",
+      "second_score": 0.6797,
+      "ranked": [
+       [
+        "3",
+        0.835
+       ],
+       [
+        "2",
+        0.6797
+       ],
+       [
+        "S",
+        0.6645
+       ],
+       [
+        "B",
+        0.6474
+       ],
+       [
+        "8",
+        0.639
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "0",
+      "status": "OK",
+      "score": 0.8847,
+      "margin": 0.1159,
+      "best_label": "0",
+      "second_label": "U",
+      "second_score": 0.7687,
+      "ranked": [
+       [
+        "0",
+        0.8847
+       ],
+       [
+        "U",
+        0.7687
+       ],
+       [
+        "D",
+        0.7638
+       ],
+       [
+        "B",
+        0.7367
+       ],
+       [
+        "8",
+        0.7142
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.7525,
+      "margin": 0.0128,
+      "best_label": "0",
+      "second_label": "S",
+      "second_score": 0.7397,
+      "ranked": [
+       [
+        "0",
+        0.7525
+       ],
+       [
+        "S",
+        0.7397
+       ],
+       [
+        "B",
+        0.7281
+       ],
+       [
+        "6",
+        0.7102
+       ],
+       [
+        "8",
+        0.7021
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.013 < 0.035 (0 vs S)"
+     },
+     {
+      "label": "B",
+      "status": "OK",
+      "score": 0.8673,
+      "margin": 0.0913,
+      "best_label": "B",
+      "second_label": "E",
+      "second_score": 0.776,
+      "ranked": [
+       [
+        "B",
+        0.8673
+       ],
+       [
+        "E",
+        0.776
+       ],
+       [
+        "S",
+        0.7712
+       ],
+       [
+        "8",
+        0.7646
+       ],
+       [
+        "6",
+        0.7603
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.8666,
+      "margin": 0.1551,
+      "best_label": "3",
+      "second_label": "2",
+      "second_score": 0.7116,
+      "ranked": [
+       [
+        "3",
+        0.8666
+       ],
+       [
+        "2",
+        0.7116
+       ],
+       [
+        "B",
+        0.6842
+       ],
+       [
+        "8",
+        0.6489
+       ],
+       [
+        "S",
+        0.6476
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "2",
+      "status": "OK",
+      "score": 0.9137,
+      "margin": 0.2478,
+      "best_label": "2",
+      "second_label": "Z",
+      "second_score": 0.6659,
+      "ranked": [
+       [
+        "2",
+        0.9137
+       ],
+       [
+        "Z",
+        0.6659
+       ],
+       [
+        "7",
+        0.6632
+       ],
+       [
+        "3",
+        0.5437
+       ],
+       [
+        "E",
+        0.4632
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "2",
+      "status": "OK",
+      "score": 0.9322,
+      "margin": 0.1869,
+      "best_label": "2",
+      "second_label": "Z",
+      "second_score": 0.7453,
+      "ranked": [
+       [
+        "2",
+        0.9322
+       ],
+       [
+        "Z",
+        0.7453
+       ],
+       [
+        "7",
+        0.7077
+       ],
+       [
+        "3",
+        0.5741
+       ],
+       [
+        "E",
+        0.4775
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.84,
+      "margin": 0.1692,
+      "best_label": "3",
+      "second_label": "S",
+      "second_score": 0.6707,
+      "ranked": [
+       [
+        "3",
+        0.84
+       ],
+       [
+        "S",
+        0.6707
+       ],
+       [
+        "9",
+        0.6576
+       ],
+       [
+        "8",
+        0.6312
+       ],
+       [
+        "D",
+        0.6212
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "30?B3223",
+     "normalized_text": "30?B3223",
+     "formatted_text": "30?B3223",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8615,
+     "min_score": 0.7525,
+     "mean_margin": 0.1418,
+     "confident_ratio": 0.875,
+     "char_count": 8,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 5.027,
+     "segmentation": 30.424,
+     "recognition": 572.972,
+     "postprocessing": 0.113,
+     "attempt_total": 609.326
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "30?B3223",
+   "normalized_text": "30?B3223",
+   "formatted_text": "30?B3223",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8615,
+   "min_score": 0.7525,
+   "mean_margin": 0.1418,
+   "confident_ratio": 0.875,
+   "char_count": 8,
+   "unknown_count": 1,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "3",
+    "status": "OK",
+    "score": 0.835,
+    "margin": 0.1553,
+    "second_label": "2",
+    "second_score": 0.6797,
+    "bbox_original": [
+     180.8,
+     198.65,
+     196.93,
+     223.19
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "0",
+    "status": "OK",
+    "score": 0.8847,
+    "margin": 0.1159,
+    "second_label": "U",
+    "second_score": 0.7687,
+    "bbox_original": [
+     198.25,
+     199.75,
+     214.88,
+     224.79
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.7525,
+    "margin": 0.0128,
+    "second_label": "S",
+    "second_score": 0.7397,
+    "bbox_original": [
+     216.21,
+     200.87,
+     232.84,
+     225.91
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "B",
+    "status": "OK",
+    "score": 0.8673,
+    "margin": 0.0913,
+    "second_label": "E",
+    "second_score": 0.776,
+    "bbox_original": [
+     245.48,
+     202.7,
+     262.13,
+     228.22
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 0,
+    "label": "3",
+    "status": "OK",
+    "score": 0.8666,
+    "margin": 0.1551,
+    "second_label": "2",
+    "second_score": 0.7116,
+    "bbox_original": [
+     263.9,
+     203.85,
+     280.56,
+     229.37
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 0,
+    "label": "2",
+    "status": "OK",
+    "score": 0.9137,
+    "margin": 0.2478,
+    "second_label": "Z",
+    "second_score": 0.6659,
+    "bbox_original": [
+     282.27,
+     205.0,
+     299.93,
+     231.52
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 0,
+    "label": "2",
+    "status": "OK",
+    "score": 0.9322,
+    "margin": 0.1869,
+    "second_label": "Z",
+    "second_score": 0.7453,
+    "bbox_original": [
+     309.71,
+     206.72,
+     327.34,
+     232.76
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 0,
+    "label": "3",
+    "status": "OK",
+    "score": 0.84,
+    "margin": 0.1692,
+    "second_label": "S",
+    "second_score": 0.6707,
+    "bbox_original": [
+     328.61,
+     207.42,
+     346.74,
+     233.97
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "9.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\9.webp",
+  "bbox": [
+   0,
+   0,
+   474,
+   355
+  ],
+  "bbox_original": [
+   0.0,
+   19.0,
+   474.0,
+   355.0
+  ],
+  "detected_text": "7911??1?L",
+  "raw_text": "7911??1?L",
+  "normalized_text": "7911??1?L",
+  "message": "Có 3 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 6.277,
+   "detection": 111.468,
+   "rectification": 10.713,
+   "segmentation": 108.888,
+   "recognition": 632.175,
+   "postprocessing": 0.117,
+   "pipeline_total": 876.693
+  },
+  "total_time_ms": 876.693,
+  "candidates": [
+   {
+    "bbox": [
+     0.0,
+     19.0,
+     474.0,
+     355.0
+    ],
+    "bbox_original": [
+     0.0,
+     19.0,
+     474.0,
+     355.0
+    ],
+    "area": 159264.0,
+    "area_ratio": 0.946479,
+    "ratio": 1.4107,
+    "edge_density": 0.0566,
+    "fill_ratio": 0.8918,
+    "text_likeness": 1.0,
+    "score": 0.7873,
+    "source": "edges_close_vertical",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      0.0,
+      19.0,
+      474.0,
+      355.0
+     ],
+     "bbox_original": [
+      0.0,
+      19.0,
+      474.0,
+      355.0
+     ],
+     "area": 159264.0,
+     "area_ratio": 0.946479,
+     "ratio": 1.4107,
+     "edge_density": 0.0566,
+     "fill_ratio": 0.8918,
+     "text_likeness": 1.0,
+     "score": 0.7873,
+     "source": "edges_close_vertical",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     473,
+     335
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 9,
+    "segmentation_score": 0.9884,
+    "characters": [
+     {
+      "label": "7",
+      "status": "OK",
+      "score": 0.8146,
+      "margin": 0.0444,
+      "best_label": "7",
+      "second_label": "Z",
+      "second_score": 0.7702,
+      "ranked": [
+       [
+        "7",
+        0.8146
+       ],
+       [
+        "Z",
+        0.7702
+       ],
+       [
+        "2",
+        0.7024
+       ],
+       [
+        "3",
+        0.6188
+       ],
+       [
+        "T",
+        0.5959
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8462,
+      "margin": 0.0456,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8006,
+      "ranked": [
+       [
+        "9",
+        0.8462
+       ],
+       [
+        "8",
+        0.8006
+       ],
+       [
+        "3",
+        0.7472
+       ],
+       [
+        "5",
+        0.7148
+       ],
+       [
+        "1",
+        0.7145
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.8739,
+      "margin": 0.1848,
+      "best_label": "1",
+      "second_label": "4",
+      "second_score": 0.6891,
+      "ranked": [
+       [
+        "1",
+        0.8739
+       ],
+       [
+        "4",
+        0.6891
+       ],
+       [
+        "A",
+        0.6502
+       ],
+       [
+        "X",
+        0.6181
+       ],
+       [
+        "T",
+        0.6175
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.8719,
+      "margin": 0.2268,
+      "best_label": "1",
+      "second_label": "4",
+      "second_score": 0.6451,
+      "ranked": [
+       [
+        "1",
+        0.8719
+       ],
+       [
+        "4",
+        0.6451
+       ],
+       [
+        "T",
+        0.6225
+       ],
+       [
+        "A",
+        0.6066
+       ],
+       [
+        "X",
+        0.5861
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8362,
+      "margin": 0.011,
+      "best_label": "8",
+      "second_label": "0",
+      "second_score": 0.8252,
+      "ranked": [
+       [
+        "8",
+        0.8362
+       ],
+       [
+        "0",
+        0.8252
+       ],
+       [
+        "9",
+        0.7967
+       ],
+       [
+        "6",
+        0.7845
+       ],
+       [
+        "5",
+        0.7153
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.011 < 0.035 (8 vs 0)"
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8299,
+      "margin": 0.03,
+      "best_label": "3",
+      "second_label": "1",
+      "second_score": 0.7999,
+      "ranked": [
+       [
+        "3",
+        0.8299
+       ],
+       [
+        "1",
+        0.7999
+       ],
+       [
+        "9",
+        0.7123
+       ],
+       [
+        "8",
+        0.6869
+       ],
+       [
+        "2",
+        0.6359
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.030 < 0.035 (3 vs 1)"
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.8875,
+      "margin": 0.1302,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.7573,
+      "ranked": [
+       [
+        "1",
+        0.8875
+       ],
+       [
+        "T",
+        0.7573
+       ],
+       [
+        "4",
+        0.6035
+       ],
+       [
+        "3",
+        0.5579
+       ],
+       [
+        "7",
+        0.546
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8283,
+      "margin": 0.025,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8034,
+      "ranked": [
+       [
+        "9",
+        0.8283
+       ],
+       [
+        "8",
+        0.8034
+       ],
+       [
+        "3",
+        0.7771
+       ],
+       [
+        "1",
+        0.7718
+       ],
+       [
+        "5",
+        0.7327
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.025 < 0.035 (9 vs 8)"
+     },
+     {
+      "label": "L",
+      "status": "OK",
+      "score": 0.7156,
+      "margin": 0.2022,
+      "best_label": "L",
+      "second_label": "6",
+      "second_score": 0.5134,
+      "ranked": [
+       [
+        "L",
+        0.7156
+       ],
+       [
+        "6",
+        0.5134
+       ],
+       [
+        "4",
+        0.4982
+       ],
+       [
+        "8",
+        0.48
+       ],
+       [
+        "T",
+        0.456
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "7911??1?L",
+     "normalized_text": "7911??1?L",
+     "formatted_text": "7911??1?L",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8338,
+     "min_score": 0.7156,
+     "mean_margin": 0.1,
+     "confident_ratio": 0.6667,
+     "char_count": 9,
+     "unknown_count": 3,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 3 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 10.713,
+     "segmentation": 108.888,
+     "recognition": 632.175,
+     "postprocessing": 0.117,
+     "attempt_total": 752.786
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "7911??1?L",
+   "normalized_text": "7911??1?L",
+   "formatted_text": "7911??1?L",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8338,
+   "min_score": 0.7156,
+   "mean_margin": 0.1,
+   "confident_ratio": 0.6667,
+   "char_count": 9,
+   "unknown_count": 3,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 3 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "7",
+    "status": "OK",
+    "score": 0.8146,
+    "margin": 0.0444,
+    "second_label": "Z",
+    "second_score": 0.7702,
+    "bbox_original": [
+     81.47,
+     53.1,
+     134.05,
+     176.89
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8462,
+    "margin": 0.0456,
+    "second_label": "8",
+    "second_score": 0.8006,
+    "bbox_original": [
+     144.42,
+     53.1,
+     196.27,
+     176.89
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.8739,
+    "margin": 0.1848,
+    "second_label": "4",
+    "second_score": 0.6891,
+    "bbox_original": [
+     269.59,
+     52.36,
+     324.4,
+     179.86
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.8719,
+    "margin": 0.2268,
+    "second_label": "4",
+    "second_score": 0.6451,
+    "bbox_original": [
+     341.43,
+     52.36,
+     396.24,
+     180.6
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8362,
+    "margin": 0.011,
+    "second_label": "0",
+    "second_score": 0.8252,
+    "bbox_original": [
+     50.36,
+     200.61,
+     100.73,
+     327.37
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8299,
+    "margin": 0.03,
+    "second_label": "1",
+    "second_score": 0.7999,
+    "bbox_original": [
+     119.24,
+     199.13,
+     174.79,
+     330.34
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "1",
+    "status": "OK",
+    "score": 0.8875,
+    "margin": 0.1302,
+    "second_label": "T",
+    "second_score": 0.7573,
+    "bbox_original": [
+     203.67,
+     199.13,
+     241.44,
+     331.82
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8283,
+    "margin": 0.025,
+    "second_label": "8",
+    "second_score": 0.8034,
+    "bbox_original": [
+     282.92,
+     198.39,
+     342.91,
+     332.56
+    ]
+   },
+   {
+    "order": 8,
+    "row_index": 1,
+    "label": "L",
+    "status": "OK",
+    "score": 0.7156,
+    "margin": 0.2022,
+    "second_label": "6",
+    "second_score": 0.5134,
+    "bbox_original": [
+     370.31,
+     200.61,
+     424.38,
+     334.78
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "10.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\10.webp",
+  "bbox": [
+   225,
+   48,
+   426,
+   213
+  ],
+  "bbox_original": [
+   242.0,
+   62.0,
+   409.0,
+   199.0
+  ],
+  "detected_text": "??8999999",
+  "raw_text": "??8999999",
+  "normalized_text": "??8999999",
+  "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 5.187,
+   "detection": 91.369,
+   "rectification": 5.862,
+   "segmentation": 106.532,
+   "recognition": 645.824,
+   "postprocessing": 0.109,
+   "pipeline_total": 861.755
+  },
+  "total_time_ms": 861.755,
+  "candidates": [
+   {
+    "bbox": [
+     242.0,
+     62.0,
+     409.0,
+     199.0
+    ],
+    "bbox_original": [
+     242.0,
+     62.0,
+     409.0,
+     199.0
+    ],
+    "area": 22879.0,
+    "area_ratio": 0.163067,
+    "ratio": 1.219,
+    "edge_density": 0.1147,
+    "fill_ratio": 0.9004,
+    "text_likeness": 1.0,
+    "score": 0.8701,
+    "source": "edges_quads",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      242.0,
+      62.0,
+      409.0,
+      199.0
+     ],
+     "bbox_original": [
+      242.0,
+      62.0,
+      409.0,
+      199.0
+     ],
+     "area": 22879.0,
+     "area_ratio": 0.163067,
+     "ratio": 1.219,
+     "edge_density": 0.1147,
+     "fill_ratio": 0.9004,
+     "text_likeness": 1.0,
+     "score": 0.8701,
+     "source": "edges_quads",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     188,
+     147
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 9,
+    "segmentation_score": 0.9848,
+    "characters": [
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8145,
+      "margin": 0.0189,
+      "best_label": "6",
+      "second_label": "5",
+      "second_score": 0.7955,
+      "ranked": [
+       [
+        "6",
+        0.8145
+       ],
+       [
+        "5",
+        0.7955
+       ],
+       [
+        "8",
+        0.7858
+       ],
+       [
+        "3",
+        0.6701
+       ],
+       [
+        "9",
+        0.6433
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.019 < 0.035 (6 vs 5)"
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8112,
+      "margin": 0.0106,
+      "best_label": "1",
+      "second_label": "3",
+      "second_score": 0.8006,
+      "ranked": [
+       [
+        "1",
+        0.8112
+       ],
+       [
+        "3",
+        0.8006
+       ],
+       [
+        "9",
+        0.6687
+       ],
+       [
+        "8",
+        0.6407
+       ],
+       [
+        "2",
+        0.5999
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.011 < 0.035 (1 vs 3)"
+     },
+     {
+      "label": "8",
+      "status": "OK",
+      "score": 0.8247,
+      "margin": 0.0539,
+      "best_label": "8",
+      "second_label": "9",
+      "second_score": 0.7708,
+      "ranked": [
+       [
+        "8",
+        0.8247
+       ],
+       [
+        "9",
+        0.7708
+       ],
+       [
+        "6",
+        0.719
+       ],
+       [
+        "3",
+        0.718
+       ],
+       [
+        "5",
+        0.6517
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.7687,
+      "margin": 0.0801,
+      "best_label": "9",
+      "second_label": "1",
+      "second_score": 0.6887,
+      "ranked": [
+       [
+        "9",
+        0.7687
+       ],
+       [
+        "1",
+        0.6887
+       ],
+       [
+        "8",
+        0.6854
+       ],
+       [
+        "3",
+        0.6267
+       ],
+       [
+        "0",
+        0.5938
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8795,
+      "margin": 0.1192,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7603,
+      "ranked": [
+       [
+        "9",
+        0.8795
+       ],
+       [
+        "8",
+        0.7603
+       ],
+       [
+        "0",
+        0.7152
+       ],
+       [
+        "6",
+        0.6811
+       ],
+       [
+        "3",
+        0.6773
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.814,
+      "margin": 0.0753,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.7387,
+      "ranked": [
+       [
+        "9",
+        0.814
+       ],
+       [
+        "8",
+        0.7387
+       ],
+       [
+        "1",
+        0.6879
+       ],
+       [
+        "3",
+        0.6748
+       ],
+       [
+        "0",
+        0.6573
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8655,
+      "margin": 0.1246,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.741,
+      "ranked": [
+       [
+        "9",
+        0.8655
+       ],
+       [
+        "8",
+        0.741
+       ],
+       [
+        "0",
+        0.6929
+       ],
+       [
+        "1",
+        0.6614
+       ],
+       [
+        "6",
+        0.6599
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8293,
+      "margin": 0.1053,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.724,
+      "ranked": [
+       [
+        "9",
+        0.8293
+       ],
+       [
+        "8",
+        0.724
+       ],
+       [
+        "0",
+        0.6614
+       ],
+       [
+        "6",
+        0.6431
+       ],
+       [
+        "3",
+        0.6154
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.756,
+      "margin": 0.0671,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.6889,
+      "ranked": [
+       [
+        "9",
+        0.756
+       ],
+       [
+        "8",
+        0.6889
+       ],
+       [
+        "1",
+        0.6823
+       ],
+       [
+        "3",
+        0.6378
+       ],
+       [
+        "0",
+        0.5838
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "??8999999",
+     "normalized_text": "??8999999",
+     "formatted_text": "??8999999",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8182,
+     "min_score": 0.756,
+     "mean_margin": 0.0728,
+     "confident_ratio": 0.7778,
+     "char_count": 9,
+     "unknown_count": 2,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 5.862,
+     "segmentation": 106.532,
+     "recognition": 645.824,
+     "postprocessing": 0.109,
+     "attempt_total": 759.402
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "??8999999",
+   "normalized_text": "??8999999",
+   "formatted_text": "??8999999",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8182,
+   "min_score": 0.756,
+   "mean_margin": 0.0728,
+   "confident_ratio": 0.7778,
+   "char_count": 9,
+   "unknown_count": 2,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8145,
+    "margin": 0.0189,
+    "second_label": "5",
+    "second_score": 0.7955,
+    "bbox_original": [
+     266.79,
+     66.08,
+     288.95,
+     122.76
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8112,
+    "margin": 0.0106,
+    "second_label": "3",
+    "second_score": 0.8006,
+    "bbox_original": [
+     291.94,
+     66.82,
+     314.1,
+     123.27
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "8",
+    "status": "OK",
+    "score": 0.8247,
+    "margin": 0.0539,
+    "second_label": "9",
+    "second_score": 0.7708,
+    "bbox_original": [
+     338.91,
+     69.16,
+     363.08,
+     123.4
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.7687,
+    "margin": 0.0801,
+    "second_label": "1",
+    "second_score": 0.6887,
+    "bbox_original": [
+     361.59,
+     70.28,
+     386.71,
+     123.88
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8795,
+    "margin": 0.1192,
+    "second_label": "8",
+    "second_score": 0.7603,
+    "bbox_original": [
+     249.66,
+     132.62,
+     272.72,
+     191.86
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.814,
+    "margin": 0.0753,
+    "second_label": "8",
+    "second_score": 0.7387,
+    "bbox_original": [
+     282.85,
+     132.72,
+     305.57,
+     190.61
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8655,
+    "margin": 0.1246,
+    "second_label": "8",
+    "second_score": 0.741,
+    "bbox_original": [
+     314.25,
+     132.8,
+     338.24,
+     189.72
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8293,
+    "margin": 0.1053,
+    "second_label": "8",
+    "second_score": 0.724,
+    "bbox_original": [
+     351.86,
+     132.86,
+     377.21,
+     188.38
+    ]
+   },
+   {
+    "order": 8,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.756,
+    "margin": 0.0671,
+    "second_label": "8",
+    "second_score": 0.6889,
+    "bbox_original": [
+     380.96,
+     132.9,
+     406.27,
+     187.49
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "11.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\11.webp",
+  "bbox": [
+   137,
+   99,
+   348,
+   234
+  ],
+  "bbox_original": [
+   155.0,
+   110.0,
+   330.0,
+   223.0
+  ],
+  "detected_text": "?98155555",
+  "raw_text": "?98155555",
+  "normalized_text": "?98155555",
+  "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 5.963,
+   "detection": 140.402,
+   "rectification": 10.605,
+   "segmentation": 136.332,
+   "recognition": 782.562,
+   "postprocessing": 0.265,
+   "pipeline_total": 1083.08
+  },
+  "total_time_ms": 1083.08,
+  "candidates": [
+   {
+    "bbox": [
+     155.0,
+     110.0,
+     330.0,
+     223.0
+    ],
+    "bbox_original": [
+     155.0,
+     110.0,
+     330.0,
+     223.0
+    ],
+    "area": 19775.0,
+    "area_ratio": 0.140944,
+    "ratio": 1.5487,
+    "edge_density": 0.1264,
+    "fill_ratio": 0.8539,
+    "text_likeness": 1.0,
+    "score": 0.9159,
+    "source": "tophat",
+    "passed": true
+   },
+   {
+    "bbox": [
+     215.0,
+     32.0,
+     277.0,
+     71.0
+    ],
+    "bbox_original": [
+     215.0,
+     32.0,
+     277.0,
+     71.0
+    ],
+    "area": 2418.0,
+    "area_ratio": 0.017234,
+    "ratio": 1.5897,
+    "edge_density": 0.2002,
+    "fill_ratio": 0.4952,
+    "text_likeness": 1.0,
+    "score": 0.8363,
+    "source": "tophat",
+    "passed": true
+   },
+   {
+    "bbox": [
+     219.0,
+     79.0,
+     265.0,
+     91.0
+    ],
+    "bbox_original": [
+     219.0,
+     79.0,
+     265.0,
+     91.0
+    ],
+    "area": 552.0,
+    "area_ratio": 0.003934,
+    "ratio": 3.8333,
+    "edge_density": 0.2083,
+    "fill_ratio": 0.3995,
+    "text_likeness": 0.8,
+    "score": 0.5779,
+    "source": "bright_plate",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      155.0,
+      110.0,
+      330.0,
+      223.0
+     ],
+     "bbox_original": [
+      155.0,
+      110.0,
+      330.0,
+      223.0
+     ],
+     "area": 19775.0,
+     "area_ratio": 0.140944,
+     "ratio": 1.5487,
+     "edge_density": 0.1264,
+     "fill_ratio": 0.8539,
+     "text_likeness": 1.0,
+     "score": 0.9159,
+     "source": "tophat",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     205,
+     134
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 9,
+    "segmentation_score": 0.9836,
+    "characters": [
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8298,
+      "margin": 0.0127,
+      "best_label": "2",
+      "second_label": "Z",
+      "second_score": 0.8171,
+      "ranked": [
+       [
+        "2",
+        0.8298
+       ],
+       [
+        "Z",
+        0.8171
+       ],
+       [
+        "7",
+        0.8009
+       ],
+       [
+        "3",
+        0.668
+       ],
+       [
+        "T",
+        0.6054
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.013 < 0.035 (2 vs Z)"
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.9457,
+      "margin": 0.1277,
+      "best_label": "9",
+      "second_label": "8",
+      "second_score": 0.8181,
+      "ranked": [
+       [
+        "9",
+        0.9457
+       ],
+       [
+        "8",
+        0.8181
+       ],
+       [
+        "0",
+        0.7768
+       ],
+       [
+        "3",
+        0.7672
+       ],
+       [
+        "6",
+        0.7325
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "8",
+      "status": "OK",
+      "score": 0.9227,
+      "margin": 0.0665,
+      "best_label": "8",
+      "second_label": "9",
+      "second_score": 0.8562,
+      "ranked": [
+       [
+        "8",
+        0.9227
+       ],
+       [
+        "9",
+        0.8562
+       ],
+       [
+        "6",
+        0.8422
+       ],
+       [
+        "0",
+        0.8229
+       ],
+       [
+        "3",
+        0.756
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9258,
+      "margin": 0.173,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.7528,
+      "ranked": [
+       [
+        "1",
+        0.9258
+       ],
+       [
+        "T",
+        0.7528
+       ],
+       [
+        "7",
+        0.6352
+       ],
+       [
+        "3",
+        0.6193
+       ],
+       [
+        "4",
+        0.6091
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9193,
+      "margin": 0.1377,
+      "best_label": "5",
+      "second_label": "S",
+      "second_score": 0.7815,
+      "ranked": [
+       [
+        "5",
+        0.9193
+       ],
+       [
+        "S",
+        0.7815
+       ],
+       [
+        "6",
+        0.7566
+       ],
+       [
+        "8",
+        0.7233
+       ],
+       [
+        "3",
+        0.6851
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9242,
+      "margin": 0.1681,
+      "best_label": "5",
+      "second_label": "S",
+      "second_score": 0.756,
+      "ranked": [
+       [
+        "5",
+        0.9242
+       ],
+       [
+        "S",
+        0.756
+       ],
+       [
+        "6",
+        0.7419
+       ],
+       [
+        "8",
+        0.7159
+       ],
+       [
+        "3",
+        0.6625
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9195,
+      "margin": 0.1373,
+      "best_label": "5",
+      "second_label": "S",
+      "second_score": 0.7822,
+      "ranked": [
+       [
+        "5",
+        0.9195
+       ],
+       [
+        "S",
+        0.7822
+       ],
+       [
+        "6",
+        0.7502
+       ],
+       [
+        "8",
+        0.706
+       ],
+       [
+        "3",
+        0.6414
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.9357,
+      "margin": 0.1466,
+      "best_label": "5",
+      "second_label": "S",
+      "second_score": 0.7891,
+      "ranked": [
+       [
+        "5",
+        0.9357
+       ],
+       [
+        "S",
+        0.7891
+       ],
+       [
+        "6",
+        0.7449
+       ],
+       [
+        "8",
+        0.7244
+       ],
+       [
+        "9",
+        0.677
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "5",
+      "status": "OK",
+      "score": 0.929,
+      "margin": 0.1461,
+      "best_label": "5",
+      "second_label": "S",
+      "second_score": 0.7829,
+      "ranked": [
+       [
+        "5",
+        0.929
+       ],
+       [
+        "S",
+        0.7829
+       ],
+       [
+        "6",
+        0.7635
+       ],
+       [
+        "8",
+        0.747
+       ],
+       [
+        "9",
+        0.6943
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "?98155555",
+     "normalized_text": "?98155555",
+     "formatted_text": "?98155555",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.9168,
+     "min_score": 0.8298,
+     "mean_margin": 0.124,
+     "confident_ratio": 0.8889,
+     "char_count": 9,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 5.664,
+     "segmentation": 114.217,
+     "recognition": 645.881,
+     "postprocessing": 0.102,
+     "attempt_total": 766.773
+    }
+   },
+   {
+    "index": 1,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      215.0,
+      32.0,
+      277.0,
+      71.0
+     ],
+     "bbox_original": [
+      215.0,
+      32.0,
+      277.0,
+      71.0
+     ],
+     "area": 2418.0,
+     "area_ratio": 0.017234,
+     "ratio": 1.5897,
+     "edge_density": 0.2002,
+     "fill_ratio": 0.4952,
+     "text_likeness": 1.0,
+     "score": 0.8363,
+     "source": "tophat",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     70,
+     42
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 1,
+    "segmentation_score": 0.41,
+    "characters": [
+     {
+      "label": "4",
+      "status": "OK",
+      "score": 0.6107,
+      "margin": 0.0474,
+      "best_label": "4",
+      "second_label": "C",
+      "second_score": 0.5633,
+      "ranked": [
+       [
+        "4",
+        0.6107
+       ],
+       [
+        "C",
+        0.5633
+       ],
+       [
+        "6",
+        0.5182
+       ],
+       [
+        "G",
+        0.4541
+       ],
+       [
+        "A",
+        0.4481
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "4",
+     "normalized_text": "4",
+     "formatted_text": "4",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Độ dài chuỗi 1 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": true,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.6107,
+     "min_score": 0.6107,
+     "mean_margin": 0.0474,
+     "confident_ratio": 1.0,
+     "char_count": 1,
+     "unknown_count": 0,
+     "status": "LOW_CONFIDENCE",
+     "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+     "warnings": [
+      "Độ dài chuỗi 1 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 3.103,
+     "segmentation": 15.293,
+     "recognition": 68.565,
+     "postprocessing": 0.082,
+     "attempt_total": 87.225
+    }
+   },
+   {
+    "index": 2,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      219.0,
+      79.0,
+      265.0,
+      91.0
+     ],
+     "bbox_original": [
+      219.0,
+      79.0,
+      265.0,
+      91.0
+     ],
+     "area": 552.0,
+     "area_ratio": 0.003934,
+     "ratio": 3.8333,
+     "edge_density": 0.2083,
+     "fill_ratio": 0.3995,
+     "text_likeness": 0.8,
+     "score": 0.5779,
+     "source": "bright_plate",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     60,
+     20
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 1,
+    "segmentation_score": 0.41,
+    "characters": [
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.7364,
+      "margin": 0.0034,
+      "best_label": "V",
+      "second_label": "B",
+      "second_score": 0.733,
+      "ranked": [
+       [
+        "V",
+        0.7364
+       ],
+       [
+        "B",
+        0.733
+       ],
+       [
+        "R",
+        0.7295
+       ],
+       [
+        "M",
+        0.7166
+       ],
+       [
+        "U",
+        0.7053
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.003 < 0.035 (V vs B)"
+     }
+    ],
+    "text": {
+     "raw_text": "?",
+     "normalized_text": "?",
+     "formatted_text": "?",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Độ dài chuỗi 1 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.7364,
+     "min_score": 0.7364,
+     "mean_margin": 0.0034,
+     "confident_ratio": 0.0,
+     "char_count": 1,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Độ dài chuỗi 1 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 1.839,
+     "segmentation": 6.822,
+     "recognition": 68.117,
+     "postprocessing": 0.081,
+     "attempt_total": 77.053
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "?98155555",
+   "normalized_text": "?98155555",
+   "formatted_text": "?98155555",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.9168,
+   "min_score": 0.8298,
+   "mean_margin": 0.124,
+   "confident_ratio": 0.8889,
+   "char_count": 9,
+   "unknown_count": 1,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8298,
+    "margin": 0.0127,
+    "second_label": "Z",
+    "second_score": 0.8171,
+    "bbox_original": [
+     176.69,
+     121.97,
+     200.79,
+     168.24
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.9457,
+    "margin": 0.1277,
+    "second_label": "8",
+    "second_score": 0.8181,
+    "bbox_original": [
+     204.01,
+     122.29,
+     225.86,
+     167.91
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "8",
+    "status": "OK",
+    "score": 0.9227,
+    "margin": 0.0665,
+    "second_label": "9",
+    "second_score": 0.8562,
+    "bbox_original": [
+     256.39,
+     121.32,
+     278.24,
+     167.59
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.9258,
+    "margin": 0.173,
+    "second_label": "T",
+    "second_score": 0.7528,
+    "bbox_original": [
+     285.96,
+     121.0,
+     301.7,
+     167.91
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9193,
+    "margin": 0.1377,
+    "second_label": "S",
+    "second_score": 0.7815,
+    "bbox_original": [
+     165.44,
+     175.35,
+     187.94,
+     219.03
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9242,
+    "margin": 0.1681,
+    "second_label": "S",
+    "second_score": 0.756,
+    "bbox_original": [
+     194.69,
+     175.68,
+     216.54,
+     218.38
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9195,
+    "margin": 0.1373,
+    "second_label": "S",
+    "second_score": 0.7822,
+    "bbox_original": [
+     223.93,
+     175.35,
+     245.46,
+     217.74
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "5",
+    "status": "OK",
+    "score": 0.9357,
+    "margin": 0.1466,
+    "second_label": "S",
+    "second_score": 0.7891,
+    "bbox_original": [
+     266.03,
+     175.35,
+     286.6,
+     217.09
+    ]
+   },
+   {
+    "order": 8,
+    "row_index": 1,
+    "label": "5",
+    "status": "OK",
+    "score": 0.929,
+    "margin": 0.1461,
+    "second_label": "S",
+    "second_score": 0.7829,
+    "bbox_original": [
+     295.27,
+     173.41,
+     316.48,
+     216.44
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "12.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\12.webp",
+  "bbox": [
+   0,
+   0,
+   474,
+   293
+  ],
+  "bbox_original": [
+   0.0,
+   0.0,
+   474.0,
+   266.0
+  ],
+  "detected_text": "30?49344",
+  "raw_text": "30?49344",
+  "normalized_text": "30?49344",
+  "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Không tìm được 4 góc tin cậy; dùng crop bounding box.",
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "bbox",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 5.815,
+   "detection": 125.305,
+   "rectification": 5.786,
+   "segmentation": 75.172,
+   "recognition": 564.724,
+   "postprocessing": 0.127,
+   "pipeline_total": 783.718
+  },
+  "total_time_ms": 783.718,
+  "candidates": [
+   {
+    "bbox": [
+     0.0,
+     0.0,
+     474.0,
+     266.0
+    ],
+    "bbox_original": [
+     0.0,
+     0.0,
+     474.0,
+     266.0
+    ],
+    "area": 126084.0,
+    "area_ratio": 0.898649,
+    "ratio": 1.782,
+    "edge_density": 0.0762,
+    "fill_ratio": 0.777,
+    "text_likeness": 1.0,
+    "score": 0.7025,
+    "source": "bright_plate",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      0.0,
+      0.0,
+      474.0,
+      266.0
+     ],
+     "bbox_original": [
+      0.0,
+      0.0,
+      474.0,
+      266.0
+     ],
+     "area": 126084.0,
+     "area_ratio": 0.898649,
+     "ratio": 1.782,
+     "edge_density": 0.0762,
+     "fill_ratio": 0.777,
+     "text_likeness": 1.0,
+     "score": 0.7025,
+     "source": "bright_plate",
+     "passed": true
+    },
+    "rectification_method": "bbox",
+    "rectification_size": [
+     474,
+     293
+    ],
+    "segmentation_status": "OK",
+    "segmentation_count": 8,
+    "segmentation_score": 0.9875,
+    "characters": [
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.7656,
+      "margin": 0.0447,
+      "best_label": "3",
+      "second_label": "2",
+      "second_score": 0.7209,
+      "ranked": [
+       [
+        "3",
+        0.7656
+       ],
+       [
+        "2",
+        0.7209
+       ],
+       [
+        "9",
+        0.6187
+       ],
+       [
+        "S",
+        0.6036
+       ],
+       [
+        "0",
+        0.5826
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "0",
+      "status": "OK",
+      "score": 0.8867,
+      "margin": 0.0702,
+      "best_label": "0",
+      "second_label": "D",
+      "second_score": 0.8165,
+      "ranked": [
+       [
+        "0",
+        0.8867
+       ],
+       [
+        "D",
+        0.8165
+       ],
+       [
+        "U",
+        0.7747
+       ],
+       [
+        "B",
+        0.7472
+       ],
+       [
+        "9",
+        0.7367
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.7212,
+      "margin": 0.0042,
+      "best_label": "0",
+      "second_label": "S",
+      "second_score": 0.717,
+      "ranked": [
+       [
+        "0",
+        0.7212
+       ],
+       [
+        "S",
+        0.717
+       ],
+       [
+        "6",
+        0.7051
+       ],
+       [
+        "C",
+        0.6795
+       ],
+       [
+        "E",
+        0.6512
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.004 < 0.035 (0 vs S)"
+     },
+     {
+      "label": "4",
+      "status": "OK",
+      "score": 0.8579,
+      "margin": 0.1911,
+      "best_label": "4",
+      "second_label": "A",
+      "second_score": 0.6667,
+      "ranked": [
+       [
+        "4",
+        0.8579
+       ],
+       [
+        "A",
+        0.6667
+       ],
+       [
+        "6",
+        0.6222
+       ],
+       [
+        "S",
+        0.5538
+       ],
+       [
+        "8",
+        0.5449
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.8532,
+      "margin": 0.0571,
+      "best_label": "9",
+      "second_label": "S",
+      "second_score": 0.7961,
+      "ranked": [
+       [
+        "9",
+        0.8532
+       ],
+       [
+        "S",
+        0.7961
+       ],
+       [
+        "5",
+        0.7705
+       ],
+       [
+        "8",
+        0.7316
+       ],
+       [
+        "B",
+        0.7166
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "3",
+      "status": "OK",
+      "score": 0.815,
+      "margin": 0.1334,
+      "best_label": "3",
+      "second_label": "2",
+      "second_score": 0.6816,
+      "ranked": [
+       [
+        "3",
+        0.815
+       ],
+       [
+        "2",
+        0.6816
+       ],
+       [
+        "9",
+        0.6363
+       ],
+       [
+        "S",
+        0.6347
+       ],
+       [
+        "D",
+        0.6127
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "4",
+      "status": "OK",
+      "score": 0.803,
+      "margin": 0.2131,
+      "best_label": "4",
+      "second_label": "A",
+      "second_score": 0.5899,
+      "ranked": [
+       [
+        "4",
+        0.803
+       ],
+       [
+        "A",
+        0.5899
+       ],
+       [
+        "6",
+        0.5498
+       ],
+       [
+        "K",
+        0.4999
+       ],
+       [
+        "8",
+        0.4762
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "4",
+      "status": "OK",
+      "score": 0.8212,
+      "margin": 0.2239,
+      "best_label": "4",
+      "second_label": "A",
+      "second_score": 0.5973,
+      "ranked": [
+       [
+        "4",
+        0.8212
+       ],
+       [
+        "A",
+        0.5973
+       ],
+       [
+        "6",
+        0.5343
+       ],
+       [
+        "K",
+        0.5038
+       ],
+       [
+        "1",
+        0.4896
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "30?49344",
+     "normalized_text": "30?49344",
+     "formatted_text": "30?49344",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": true,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8155,
+     "min_score": 0.7212,
+     "mean_margin": 0.1172,
+     "confident_ratio": 0.875,
+     "char_count": 8,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 5.786,
+     "segmentation": 75.172,
+     "recognition": 564.724,
+     "postprocessing": 0.127,
+     "attempt_total": 646.616
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "30?49344",
+   "normalized_text": "30?49344",
+   "formatted_text": "30?49344",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": true,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8155,
+   "min_score": 0.7212,
+   "mean_margin": 0.1172,
+   "confident_ratio": 0.875,
+   "char_count": 8,
+   "unknown_count": 1,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "3",
+    "status": "OK",
+    "score": 0.7656,
+    "margin": 0.0447,
+    "second_label": "2",
+    "second_score": 0.7209,
+    "bbox_original": [
+     213.3,
+     98.5,
+     256.26,
+     167.38
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "0",
+    "status": "OK",
+    "score": 0.8867,
+    "margin": 0.0702,
+    "second_label": "D",
+    "second_score": 0.8165,
+    "bbox_original": [
+     265.88,
+     99.98,
+     308.84,
+     168.12
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.7212,
+    "margin": 0.0042,
+    "second_label": "S",
+    "second_score": 0.717,
+    "bbox_original": [
+     317.73,
+     101.47,
+     360.68,
+     168.86
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 1,
+    "label": "4",
+    "status": "OK",
+    "score": 0.8579,
+    "margin": 0.1911,
+    "second_label": "A",
+    "second_score": 0.6667,
+    "bbox_original": [
+     147.38,
+     182.19,
+     189.6,
+     248.11
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 1,
+    "label": "9",
+    "status": "OK",
+    "score": 0.8532,
+    "margin": 0.0571,
+    "second_label": "S",
+    "second_score": 0.7961,
+    "bbox_original": [
+     199.97,
+     182.93,
+     242.18,
+     247.37
+    ]
+   },
+   {
+    "order": 5,
+    "row_index": 1,
+    "label": "3",
+    "status": "OK",
+    "score": 0.815,
+    "margin": 0.1334,
+    "second_label": "2",
+    "second_score": 0.6816,
+    "bbox_original": [
+     251.07,
+     183.68,
+     292.55,
+     247.37
+    ]
+   },
+   {
+    "order": 6,
+    "row_index": 1,
+    "label": "4",
+    "status": "OK",
+    "score": 0.803,
+    "margin": 0.2131,
+    "second_label": "A",
+    "second_score": 0.5899,
+    "bbox_original": [
+     321.43,
+     183.68,
+     360.68,
+     247.37
+    ]
+   },
+   {
+    "order": 7,
+    "row_index": 1,
+    "label": "4",
+    "status": "OK",
+    "score": 0.8212,
+    "margin": 0.2239,
+    "second_label": "A",
+    "second_score": 0.5973,
+    "bbox_original": [
+     369.57,
+     183.68,
+     408.08,
+     246.63
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "13.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\13.webp",
+  "bbox": [
+   146,
+   58,
+   375,
+   216
+  ],
+  "bbox_original": [
+   165.0,
+   71.0,
+   356.0,
+   203.0
+  ],
+  "detected_text": "4?01?",
+  "raw_text": "4?01?",
+  "normalized_text": "4?01?",
+  "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+  "warnings": [
+   "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+   "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 4.97,
+   "detection": 86.534,
+   "rectification": 4.65,
+   "segmentation": 64.172,
+   "recognition": 358.938,
+   "postprocessing": 0.096,
+   "pipeline_total": 524.74
+  },
+  "total_time_ms": 524.74,
+  "candidates": [
+   {
+    "bbox": [
+     165.0,
+     71.0,
+     356.0,
+     203.0
+    ],
+    "bbox_original": [
+     165.0,
+     71.0,
+     356.0,
+     203.0
+    ],
+    "area": 25212.0,
+    "area_ratio": 0.199962,
+    "ratio": 1.447,
+    "edge_density": 0.0803,
+    "fill_ratio": 1.0,
+    "text_likeness": 0.6,
+    "score": 0.8329,
+    "source": "stacked_merge",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      165.0,
+      71.0,
+      356.0,
+      203.0
+     ],
+     "bbox_original": [
+      165.0,
+      71.0,
+      356.0,
+      203.0
+     ],
+     "area": 25212.0,
+     "area_ratio": 0.199962,
+     "ratio": 1.447,
+     "edge_density": 0.0803,
+     "fill_ratio": 1.0,
+     "text_likeness": 0.6,
+     "score": 0.8329,
+     "source": "stacked_merge",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     228,
+     111
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 5,
+    "segmentation_score": 0.6585,
+    "characters": [
+     {
+      "label": "4",
+      "status": "OK",
+      "score": 0.8316,
+      "margin": 0.1987,
+      "best_label": "4",
+      "second_label": "A",
+      "second_score": 0.6329,
+      "ranked": [
+       [
+        "4",
+        0.8316
+       ],
+       [
+        "A",
+        0.6329
+       ],
+       [
+        "6",
+        0.6279
+       ],
+       [
+        "L",
+        0.6257
+       ],
+       [
+        "C",
+        0.595
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8921,
+      "margin": 0.0128,
+      "best_label": "8",
+      "second_label": "B",
+      "second_score": 0.8793,
+      "ranked": [
+       [
+        "8",
+        0.8921
+       ],
+       [
+        "B",
+        0.8793
+       ],
+       [
+        "9",
+        0.7965
+       ],
+       [
+        "0",
+        0.7872
+       ],
+       [
+        "S",
+        0.7737
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.013 < 0.035 (8 vs B)"
+     },
+     {
+      "label": "0",
+      "status": "OK",
+      "score": 0.9302,
+      "margin": 0.1191,
+      "best_label": "0",
+      "second_label": "D",
+      "second_score": 0.8112,
+      "ranked": [
+       [
+        "0",
+        0.9302
+       ],
+       [
+        "D",
+        0.8112
+       ],
+       [
+        "U",
+        0.7817
+       ],
+       [
+        "B",
+        0.7428
+       ],
+       [
+        "C",
+        0.6832
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9193,
+      "margin": 0.2006,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.7187,
+      "ranked": [
+       [
+        "1",
+        0.9193
+       ],
+       [
+        "T",
+        0.7187
+       ],
+       [
+        "4",
+        0.6274
+       ],
+       [
+        "7",
+        0.5733
+       ],
+       [
+        "3",
+        0.5704
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.8222,
+      "margin": 0.0062,
+      "best_label": "S",
+      "second_label": "B",
+      "second_score": 0.816,
+      "ranked": [
+       [
+        "S",
+        0.8222
+       ],
+       [
+        "B",
+        0.816
+       ],
+       [
+        "E",
+        0.8039
+       ],
+       [
+        "6",
+        0.8
+       ],
+       [
+        "8",
+        0.7924
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.006 < 0.035 (S vs B)"
+     }
+    ],
+    "text": {
+     "raw_text": "4?01?",
+     "normalized_text": "4?01?",
+     "formatted_text": "4?01?",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.8791,
+     "min_score": 0.8222,
+     "mean_margin": 0.1075,
+     "confident_ratio": 0.6,
+     "char_count": 5,
+     "unknown_count": 2,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 4.65,
+     "segmentation": 64.172,
+     "recognition": 358.938,
+     "postprocessing": 0.096,
+     "attempt_total": 428.506
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "4?01?",
+   "normalized_text": "4?01?",
+   "formatted_text": "4?01?",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+     "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": false,
+     "length": false,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.8791,
+   "min_score": 0.8222,
+   "mean_margin": 0.1075,
+   "confident_ratio": 0.6,
+   "char_count": 5,
+   "unknown_count": 2,
+   "status": "LOW_CONFIDENCE",
+   "message": "Có 2 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+   "warnings": [
+    "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+    "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "4",
+    "status": "OK",
+    "score": 0.8316,
+    "margin": 0.1987,
+    "second_label": "A",
+    "second_score": 0.6329,
+    "bbox_original": [
+     186.79,
+     122.71,
+     209.33,
+     160.09
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8921,
+    "margin": 0.0128,
+    "second_label": "B",
+    "second_score": 0.8793,
+    "bbox_original": [
+     215.42,
+     123.07,
+     238.32,
+     160.09
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "0",
+    "status": "OK",
+    "score": 0.9302,
+    "margin": 0.1191,
+    "second_label": "D",
+    "second_score": 0.8112,
+    "bbox_original": [
+     243.68,
+     123.07,
+     266.59,
+     160.09
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "1",
+    "status": "OK",
+    "score": 0.9193,
+    "margin": 0.2006,
+    "second_label": "T",
+    "second_score": 0.7187,
+    "bbox_original": [
+     289.13,
+     123.07,
+     301.65,
+     160.09
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 0,
+    "label": "?",
+    "status": "AMBIGUOUS",
+    "score": 0.8222,
+    "margin": 0.0062,
+    "second_label": "B",
+    "second_score": 0.816,
+    "bbox_original": [
+     312.03,
+     123.07,
+     335.29,
+     160.09
+    ]
+   }
+  ],
+  "debug_dir": null
+ },
+ "14.webp": {
+  "status": "LOW_CONFIDENCE",
+  "display_status": "KHÔNG ĐỦ TIN CẬY",
+  "image_path": "data\\user_images\\14.webp",
+  "bbox": [
+   149,
+   260,
+   354,
+   298
+  ],
+  "bbox_original": [
+   166.0,
+   263.0,
+   337.0,
+   295.0
+  ],
+  "detected_text": "86699",
+  "raw_text": "86699",
+  "normalized_text": "86699",
+  "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+  "warnings": [
+   "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+   "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+  ],
+  "errors": [],
+  "rectification_method": "perspective",
+  "template_stats": {
+   "labels": 36,
+   "templates": 1474,
+   "coarse_templates": 216,
+   "raw_templates": 1620,
+   "missing_labels": [],
+   "warnings": [],
+   "load_time_ms": 1251.145
+  },
+  "timings_ms": {
+   "preprocess": 6.857,
+   "detection": 229.883,
+   "rectification": 11.451,
+   "segmentation": 91.671,
+   "recognition": 760.902,
+   "postprocessing": 0.19,
+   "pipeline_total": 1109.337
+  },
+  "total_time_ms": 1109.337,
+  "candidates": [
+   {
+    "bbox": [
+     166.0,
+     263.0,
+     337.0,
+     295.0
+    ],
+    "bbox_original": [
+     166.0,
+     263.0,
+     337.0,
+     295.0
+    ],
+    "area": 5472.0,
+    "area_ratio": 0.031628,
+    "ratio": 5.3438,
+    "edge_density": 0.2045,
+    "fill_ratio": 0.8285,
+    "text_likeness": 0.8,
+    "score": 0.7391,
+    "source": "ink_adaptive_close",
+    "passed": true
+   },
+   {
+    "bbox": [
+     0.0,
+     0.0,
+     474.0,
+     242.0
+    ],
+    "bbox_original": [
+     0.0,
+     0.0,
+     474.0,
+     242.0
+    ],
+    "area": 114708.0,
+    "area_ratio": 0.663014,
+    "ratio": 1.9587,
+    "edge_density": 0.0601,
+    "fill_ratio": 0.7736,
+    "text_likeness": 0.2,
+    "score": 0.4918,
+    "source": "ink_adaptive_close",
+    "passed": true
+   }
+  ],
+  "attempts": [
+   {
+    "index": 0,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      166.0,
+      263.0,
+      337.0,
+      295.0
+     ],
+     "bbox_original": [
+      166.0,
+      263.0,
+      337.0,
+      295.0
+     ],
+     "area": 5472.0,
+     "area_ratio": 0.031628,
+     "ratio": 5.3438,
+     "edge_density": 0.2045,
+     "fill_ratio": 0.8285,
+     "text_likeness": 0.8,
+     "score": 0.7391,
+     "source": "ink_adaptive_close",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     147,
+     38
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 5,
+    "segmentation_score": 0.656,
+    "characters": [
+     {
+      "label": "8",
+      "status": "OK",
+      "score": 0.9096,
+      "margin": 0.0711,
+      "best_label": "8",
+      "second_label": "9",
+      "second_score": 0.8385,
+      "ranked": [
+       [
+        "8",
+        0.9096
+       ],
+       [
+        "9",
+        0.8385
+       ],
+       [
+        "6",
+        0.8192
+       ],
+       [
+        "0",
+        0.8044
+       ],
+       [
+        "S",
+        0.7559
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "6",
+      "status": "OK",
+      "score": 0.9281,
+      "margin": 0.0809,
+      "best_label": "6",
+      "second_label": "8",
+      "second_score": 0.8472,
+      "ranked": [
+       [
+        "6",
+        0.9281
+       ],
+       [
+        "8",
+        0.8472
+       ],
+       [
+        "5",
+        0.8389
+       ],
+       [
+        "0",
+        0.795
+       ],
+       [
+        "S",
+        0.7376
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "6",
+      "status": "OK",
+      "score": 0.9149,
+      "margin": 0.0676,
+      "best_label": "6",
+      "second_label": "8",
+      "second_score": 0.8473,
+      "ranked": [
+       [
+        "6",
+        0.9149
+       ],
+       [
+        "8",
+        0.8473
+       ],
+       [
+        "5",
+        0.8424
+       ],
+       [
+        "0",
+        0.8116
+       ],
+       [
+        "S",
+        0.7385
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.938,
+      "margin": 0.1189,
+      "best_label": "9",
+      "second_label": "0",
+      "second_score": 0.8191,
+      "ranked": [
+       [
+        "9",
+        0.938
+       ],
+       [
+        "0",
+        0.8191
+       ],
+       [
+        "8",
+        0.6845
+       ],
+       [
+        "6",
+        0.6731
+       ],
+       [
+        "3",
+        0.6264
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "9",
+      "status": "OK",
+      "score": 0.9255,
+      "margin": 0.1371,
+      "best_label": "9",
+      "second_label": "0",
+      "second_score": 0.7884,
+      "ranked": [
+       [
+        "9",
+        0.9255
+       ],
+       [
+        "0",
+        0.7884
+       ],
+       [
+        "8",
+        0.6858
+       ],
+       [
+        "2",
+        0.6552
+       ],
+       [
+        "6",
+        0.6445
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "86699",
+     "normalized_text": "86699",
+     "formatted_text": "86699",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": true,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.9232,
+     "min_score": 0.9096,
+     "mean_margin": 0.0951,
+     "confident_ratio": 1.0,
+     "char_count": 5,
+     "unknown_count": 0,
+     "status": "LOW_CONFIDENCE",
+     "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+     "warnings": [
+      "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 2.77,
+     "segmentation": 29.103,
+     "recognition": 405.145,
+     "postprocessing": 0.1,
+     "attempt_total": 437.678
+    }
+   },
+   {
+    "index": 1,
+    "status": "LOW_CONFIDENCE",
+    "error": null,
+    "candidate": {
+     "bbox": [
+      0.0,
+      0.0,
+      474.0,
+      242.0
+     ],
+     "bbox_original": [
+      0.0,
+      0.0,
+      474.0,
+      242.0
+     ],
+     "area": 114708.0,
+     "area_ratio": 0.663014,
+     "ratio": 1.9587,
+     "edge_density": 0.0601,
+     "fill_ratio": 0.7736,
+     "text_likeness": 0.2,
+     "score": 0.4918,
+     "source": "ink_adaptive_close",
+     "passed": true
+    },
+    "rectification_method": "perspective",
+    "rectification_size": [
+     473,
+     220
+    ],
+    "segmentation_status": "IMPLAUSIBLE",
+    "segmentation_count": 5,
+    "segmentation_score": 0.5882,
+    "characters": [
+     {
+      "label": "M",
+      "status": "OK",
+      "score": 0.6913,
+      "margin": 0.0607,
+      "best_label": "M",
+      "second_label": "H",
+      "second_score": 0.6306,
+      "ranked": [
+       [
+        "M",
+        0.6913
+       ],
+       [
+        "H",
+        0.6306
+       ],
+       [
+        "K",
+        0.5755
+       ],
+       [
+        "N",
+        0.5742
+       ],
+       [
+        "R",
+        0.5508
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "?",
+      "status": "AMBIGUOUS",
+      "score": 0.6275,
+      "margin": 0.0064,
+      "best_label": "S",
+      "second_label": "3",
+      "second_score": 0.6211,
+      "ranked": [
+       [
+        "S",
+        0.6275
+       ],
+       [
+        "3",
+        0.6211
+       ],
+       [
+        "B",
+        0.5861
+       ],
+       [
+        "5",
+        0.5746
+       ],
+       [
+        "Z",
+        0.5703
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Khoảng cách top-1/top-2 0.006 < 0.035 (S vs 3)"
+     },
+     {
+      "label": "4",
+      "status": "OK",
+      "score": 0.8435,
+      "margin": 0.0562,
+      "best_label": "4",
+      "second_label": "B",
+      "second_score": 0.7873,
+      "ranked": [
+       [
+        "4",
+        0.8435
+       ],
+       [
+        "B",
+        0.7873
+       ],
+       [
+        "A",
+        0.7771
+       ],
+       [
+        "R",
+        0.765
+       ],
+       [
+        "S",
+        0.7626
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "M",
+      "status": "OK",
+      "score": 0.7371,
+      "margin": 0.0477,
+      "best_label": "M",
+      "second_label": "N",
+      "second_score": 0.6895,
+      "ranked": [
+       [
+        "M",
+        0.7371
+       ],
+       [
+        "N",
+        0.6895
+       ],
+       [
+        "H",
+        0.6777
+       ],
+       [
+        "K",
+        0.6097
+       ],
+       [
+        "Y",
+        0.6069
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     },
+     {
+      "label": "1",
+      "status": "OK",
+      "score": 0.9097,
+      "margin": 0.1143,
+      "best_label": "1",
+      "second_label": "T",
+      "second_score": 0.7954,
+      "ranked": [
+       [
+        "1",
+        0.9097
+       ],
+       [
+        "T",
+        0.7954
+       ],
+       [
+        "4",
+        0.6571
+       ],
+       [
+        "7",
+        0.6126
+       ],
+       [
+        "Y",
+        0.5894
+       ]
+      ],
+      "method": "TM_CCOEFF_NORMED",
+      "message": "Đạt ngưỡng điểm và margin."
+     }
+    ],
+    "text": {
+     "raw_text": "M?4M1",
+     "normalized_text": "M?4M1",
+     "formatted_text": "M?4M1",
+     "validation": {
+      "is_valid": false,
+      "issues": [
+       "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+       "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+       "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+      ],
+      "checks": {
+       "no_unknown": false,
+       "length": false,
+       "alnum": true,
+       "pattern": false,
+       "series_letters": true,
+       "province_code": true
+      },
+      "matched_pattern": null
+     },
+     "mean_score": 0.7618,
+     "min_score": 0.6275,
+     "mean_margin": 0.0571,
+     "confident_ratio": 0.8,
+     "char_count": 5,
+     "unknown_count": 1,
+     "status": "LOW_CONFIDENCE",
+     "message": "Có 1 ký tự chưa đủ tin cậy. Hệ thống từ chối khẳng định thay vì đoán ký tự.",
+     "warnings": [
+      "Chuỗi còn ký tự chưa xác định (?); không tự đoán để lấp chỗ trống.",
+      "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+      "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+     ]
+    },
+    "timings_ms": {
+     "rectification": 8.681,
+     "segmentation": 62.568,
+     "recognition": 355.756,
+     "postprocessing": 0.089,
+     "attempt_total": 427.664
+    }
+   }
+  ],
+  "selected_attempt_index": 0,
+  "text": {
+   "raw_text": "86699",
+   "normalized_text": "86699",
+   "formatted_text": "86699",
+   "validation": {
+    "is_valid": false,
+    "issues": [
+     "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+     "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+    ],
+    "checks": {
+     "no_unknown": true,
+     "length": false,
+     "alnum": true,
+     "pattern": false,
+     "series_letters": true,
+     "province_code": true
+    },
+    "matched_pattern": null
+   },
+   "mean_score": 0.9232,
+   "min_score": 0.9096,
+   "mean_margin": 0.0951,
+   "confident_ratio": 1.0,
+   "char_count": 5,
+   "unknown_count": 0,
+   "status": "LOW_CONFIDENCE",
+   "message": "Phân đoạn ký tự không đáng tin cậy (số lượng/hình học bất thường).",
+   "warnings": [
+    "Độ dài chuỗi 5 không nằm trong khoảng 7-9.",
+    "Chuỗi không khớp quy tắc định dạng: 2 số tỉnh + 1-2 chữ series + 4-5 số."
+   ]
+  },
+  "char_boxes_original": [
+   {
+    "order": 0,
+    "row_index": 0,
+    "label": "8",
+    "status": "OK",
+    "score": 0.9096,
+    "margin": 0.0711,
+    "second_label": "9",
+    "second_score": 0.8385,
+    "bbox_original": [
+     236.59,
+     264.32,
+     252.69,
+     295.04
+    ]
+   },
+   {
+    "order": 1,
+    "row_index": 0,
+    "label": "6",
+    "status": "OK",
+    "score": 0.9281,
+    "margin": 0.0809,
+    "second_label": "8",
+    "second_score": 0.8472,
+    "bbox_original": [
+     256.46,
+     264.32,
+     272.56,
+     295.04
+    ]
+   },
+   {
+    "order": 2,
+    "row_index": 0,
+    "label": "6",
+    "status": "OK",
+    "score": 0.9149,
+    "margin": 0.0676,
+    "second_label": "8",
+    "second_score": 0.8473,
+    "bbox_original": [
+     276.34,
+     264.57,
+     292.44,
+     295.3
+    ]
+   },
+   {
+    "order": 3,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.938,
+    "margin": 0.1189,
+    "second_label": "0",
+    "second_score": 0.8191,
+    "bbox_original": [
+     301.24,
+     264.57,
+     317.34,
+     294.79
+    ]
+   },
+   {
+    "order": 4,
+    "row_index": 0,
+    "label": "9",
+    "status": "OK",
+    "score": 0.9255,
+    "margin": 0.1371,
+    "second_label": "0",
+    "second_score": 0.7884,
+    "bbox_original": [
+     320.61,
+     264.32,
+     336.46,
+     294.28
+    ]
+   }
+  ],
+  "debug_dir": null
+ }
+}

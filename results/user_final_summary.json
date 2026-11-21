@@ -1,0 +1,49 @@
+{
+  "num_images": 13,
+  "num_with_plate": 13,
+  "num_without_plate": 0,
+  "num_invalid": 0,
+  "plate_detection_rate": 1.0,
+  "detection_precision": 1.0,
+  "detection_recall": 1.0,
+  "detection_f1": 1.0,
+  "detection_true_positive": 13,
+  "detection_false_positive": 0,
+  "detection_false_negative": 0,
+  "detection_true_negative": 0,
+  "character_segmentation_accuracy": 1.0,
+  "character_segmentation_method": [
+    "count_proxy"
+  ],
+  "character_accuracy": 1.0,
+  "character_accuracy_over_gt": 1.0,
+  "character_correct": 111,
+  "character_substitutions": 0,
+  "character_insertions": 0,
+  "character_deletions": 0,
+  "ground_truth_characters": 111,
+  "exact_plate_accuracy": 1.0,
+  "exact_plate_matches": 13,
+  "average_processing_time_ms": 1863.9370307612878,
+  "stage_average_time_ms": {
+    "preprocess": 8.499515413020093,
+    "detection": 623.2862846227363,
+    "rectification": 9.463369210537236,
+    "segmentation": 218.02735382404464,
+    "recognition": 980.5116615293978,
+    "postprocessing": 0.1539769313799647
+  },
+  "failure_rate": 0.0,
+  "success_rate": 1.0,
+  "status_counts": {
+    "SUCCESS": 13
+  },
+  "conditions": [
+    "real_car",
+    "real_car_vie",
+    "real_moto"
+  ],
+  "split": "user",
+  "image_dir": "data\\user_images",
+  "elapsed_seconds": 24.260504700010642
+}

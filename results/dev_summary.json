@@ -1,0 +1,57 @@
+{
+  "num_images": 26,
+  "num_with_plate": 23,
+  "num_without_plate": 3,
+  "num_invalid": 0,
+  "plate_detection_rate": 1.0,
+  "detection_precision": 1.0,
+  "detection_recall": 1.0,
+  "detection_f1": 1.0,
+  "detection_true_positive": 23,
+  "detection_false_positive": 0,
+  "detection_false_negative": 0,
+  "detection_true_negative": 3,
+  "character_segmentation_accuracy": 0.9767080745341615,
+  "character_segmentation_method": [
+    "char_box_iou"
+  ],
+  "character_accuracy": 0.8285714285714286,
+  "character_accuracy_over_gt": 0.8285714285714286,
+  "character_correct": 145,
+  "character_substitutions": 29,
+  "character_insertions": 0,
+  "character_deletions": 1,
+  "ground_truth_characters": 175,
+  "exact_plate_accuracy": 0.34782608695652173,
+  "exact_plate_matches": 8,
+  "average_processing_time_ms": 339.3361346097663,
+  "stage_average_time_ms": {
+    "preprocess": 9.628965362655716,
+    "detection": 102.51299229611715,
+    "rectification": 1.9981260664518112,
+    "segmentation": 19.881452180688147,
+    "recognition": 226.68143043942425,
+    "postprocessing": 0.080982587583687
+  },
+  "failure_rate": 0.6538461538461539,
+  "success_rate": 0.3076923076923077,
+  "status_counts": {
+    "SUCCESS": 8,
+    "LOW_CONFIDENCE": 14,
+    "PLATE_NOT_FOUND": 3,
+    "FORMAT_WARNING": 1
+  },
+  "conditions": [
+    "clear",
+    "low_light",
+    "low_quality",
+    "low_resolution",
+    "no_plate",
+    "tilted",
+    "touching",
+    "two_line"
+  ],
+  "split": "dev",
+  "image_dir": "I:\\XLA\\BTL3\\data\\samples",
+  "elapsed_seconds": 8.876512499991804
+}

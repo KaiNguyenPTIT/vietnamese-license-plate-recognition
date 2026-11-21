@@ -1,0 +1,51 @@
+{
+  "num_images": 13,
+  "num_with_plate": 13,
+  "num_without_plate": 0,
+  "num_invalid": 0,
+  "plate_detection_rate": 1.0,
+  "detection_precision": 1.0,
+  "detection_recall": 1.0,
+  "detection_f1": 1.0,
+  "detection_true_positive": 13,
+  "detection_false_positive": 0,
+  "detection_false_negative": 0,
+  "detection_true_negative": 0,
+  "character_segmentation_accuracy": 0.9741452991452992,
+  "character_segmentation_method": [
+    "count_proxy"
+  ],
+  "character_accuracy": 0.8333333333333334,
+  "character_accuracy_over_gt": 0.8558558558558559,
+  "character_correct": 95,
+  "character_substitutions": 14,
+  "character_insertions": 3,
+  "character_deletions": 2,
+  "ground_truth_characters": 111,
+  "exact_plate_accuracy": 0.3076923076923077,
+  "exact_plate_matches": 4,
+  "average_processing_time_ms": 480.6090923062024,
+  "stage_average_time_ms": {
+    "preprocess": 5.39623846550687,
+    "detection": 122.69768463626791,
+    "rectification": 4.9263461439225535,
+    "segmentation": 78.99569231085479,
+    "recognition": 264.2194615372528,
+    "postprocessing": 0.10780768039134833
+  },
+  "failure_rate": 0.6153846153846154,
+  "success_rate": 0.15384615384615385,
+  "status_counts": {
+    "LOW_CONFIDENCE": 8,
+    "SUCCESS": 2,
+    "FORMAT_WARNING": 3
+  },
+  "conditions": [
+    "real_car",
+    "real_car_vie",
+    "real_moto"
+  ],
+  "split": "user",
+  "image_dir": "data\\user_images",
+  "elapsed_seconds": 6.262862400035374
+}

@@ -1,0 +1,57 @@
+{
+  "num_images": 26,
+  "num_with_plate": 23,
+  "num_without_plate": 3,
+  "num_invalid": 0,
+  "plate_detection_rate": 0.8260869565217391,
+  "detection_precision": 1.0,
+  "detection_recall": 0.8260869565217391,
+  "detection_f1": 0.9047619047619047,
+  "detection_true_positive": 19,
+  "detection_false_positive": 0,
+  "detection_false_negative": 4,
+  "detection_true_negative": 3,
+  "character_segmentation_accuracy": 0.8097826086956522,
+  "character_segmentation_method": [
+    "char_box_iou"
+  ],
+  "character_accuracy": 0.7165775401069518,
+  "character_accuracy_over_gt": 0.7165775401069518,
+  "character_correct": 134,
+  "character_substitutions": 24,
+  "character_insertions": 0,
+  "character_deletions": 29,
+  "ground_truth_characters": 187,
+  "exact_plate_accuracy": 0.4782608695652174,
+  "exact_plate_matches": 11,
+  "average_processing_time_ms": 1358.761769231373,
+  "stage_average_time_ms": {
+    "preprocess": 19.28015000437601,
+    "detection": 496.25228078534394,
+    "rectification": 4.479695255646393,
+    "segmentation": 120.98615716898902,
+    "recognition": 874.1809857088983,
+    "postprocessing": 0.15375238200206132
+  },
+  "failure_rate": 0.4230769230769231,
+  "success_rate": 0.5,
+  "status_counts": {
+    "SUCCESS": 13,
+    "LOW_CONFIDENCE": 9,
+    "FORMAT_WARNING": 2,
+    "PLATE_NOT_FOUND": 2
+  },
+  "conditions": [
+    "clear",
+    "low_light",
+    "low_quality",
+    "low_resolution",
+    "no_plate",
+    "tilted",
+    "touching",
+    "two_line"
+  ],
+  "split": "test",
+  "image_dir": "data\\samples",
+  "elapsed_seconds": 35.419375799945556
+}
