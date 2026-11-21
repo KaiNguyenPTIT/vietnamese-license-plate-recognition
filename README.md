@@ -1,5 +1,9 @@
 # Nhận dạng biển số xe Việt Nam bằng xử lý ảnh truyền thống
 
+[![tests](https://github.com/KaiNguyenPTIT/vietnamese-license-plate-recognition/actions/workflows/tests.yml/badge.svg)](https://github.com/KaiNguyenPTIT/vietnamese-license-plate-recognition/actions/workflows/tests.yml)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8)
+
 Đồ án xây dựng hệ thống nhận dạng biển số xe Việt Nam bằng **Python + OpenCV**,
 chỉ dùng các kỹ thuật xử lý ảnh cổ điển và **Template Matching**. Hệ thống
 không dùng học máy/học sâu, không dùng YOLO, KNN, SVM, OCR học sẵn hay API
