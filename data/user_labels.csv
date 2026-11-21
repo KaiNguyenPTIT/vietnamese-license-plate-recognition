@@ -1,0 +1,15 @@
+image_name,ground_truth,plate_type,split,condition,notes
+1.webp,71C279979,two_line,user,real_moto,Bien vuong 2 dong
+2.webp,51F97022,one_line,user,real_car,Bien o to 1 dong
+3.webp,29C199999,two_line,user,real_moto,Bien vuong 2 dong
+4.webp,59Y183159,two_line,user,real_moto,Bien vuong 2 dong
+5.webp,59D266696,two_line,user,real_moto,Bien vuong 2 dong
+6.webp,73K99999,two_line,user,real_moto,Bien vuong 2 dong
+7.webp,30G63223,one_line,user,real_car,Bien o to 1 dong
+8.jpg,17MD799999,two_line,special,special_format,Series MD7 khong khop regex chuan
+9.webp,29AA03194,two_line,user,real_moto,Bien vuong 2 dong
+10.webp,63B999999,two_line,user,real_moto,Bien vuong 2 dong
+11.webp,29B155555,two_line,user,real_moto,Bien vuong 2 dong
+12.webp,30G49344,two_line,user,real_car_vie,Bien o to co dai do VIE
+13.webp,51H48016,two_line,user,real_car_vie,Bien o to co dai do VIE
+14.webp,51F86699,one_line,user,real_car,Bien o to 1 dong
