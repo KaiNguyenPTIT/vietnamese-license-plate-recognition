@@ -194,6 +194,6 @@ Có thể dùng detector học sâu cho vùng biển và OCR cho ký tự, nhưn
 “giải thích được từng bước” và cần dữ liệu huấn luyện. Đó là hướng khác, không
 phải phạm vi đề tài.
 
-**45. Điều gì khiến đồ án có giá trị học tập?**
+**45. Điều gì khiến bài tập lớn này có giá trị học tập môn Xử lý ảnh?**
 Pipeline đầy đủ, cấu hình tập trung, 78 test, công cụ đánh giá tái lập được, báo
 cáo nêu cả thất bại và giới hạn thay vì chỉ khoe kết quả.

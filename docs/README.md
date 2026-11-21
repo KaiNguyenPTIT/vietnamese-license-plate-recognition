@@ -1,6 +1,6 @@
 # Tài liệu học tập — Nhận dạng biển số xe Việt Nam
 
-Bộ tài liệu này phục vụ ôn tập, thuyết trình và trả lời câu hỏi bảo vệ đồ án.
+Bộ tài liệu này phục vụ ôn tập, thuyết trình và trả lời câu hỏi vấn đáp bài tập lớn môn Xử lý ảnh.
 Nội dung bám sát mã nguồn trong repo; không mô tả tính năng không tồn tại.
 
 ## Đọc theo thứ tự

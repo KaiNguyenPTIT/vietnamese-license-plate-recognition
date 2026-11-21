@@ -976,9 +976,9 @@ def load_data() -> dict[str, Any]:
 # Bìa và phần đầu
 # ======================================================================
 def _add_cover(doc: Document) -> None:
-    add_center(doc, "TRƯỜNG ĐẠI HỌC [TÊN TRƯỜNG]", size=14, bold=True,
+    add_center(doc, "HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG", size=14, bold=True,
                space_before=18, space_after=4)
-    add_center(doc, "KHOA [TÊN KHOA]", size=13, bold=True, space_after=10)
+    add_center(doc, "KHOA CÔNG NGHỆ THÔNG TIN", size=13, bold=True, space_after=10)
     line = doc.add_paragraph()
     line.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
     line.paragraph_format.space_before = Pt(0)
@@ -986,14 +986,15 @@ def _add_cover(doc: Document) -> None:
     run = line.add_run("───────────────  ❖  ───────────────")
     _set_run_font(run, BODY_FONT, 11, color=RGBColor(70, 70, 70))
 
-    add_center(doc, "BÁO CÁO ĐỒ ÁN MÔN HỌC", size=15, bold=True,
-               space_before=6, space_after=8)
+    add_center(doc, "BÁO CÁO BÀI TẬP LỚN", size=16, bold=True,
+               space_before=6, space_after=6)
+    add_center(doc, "HỌC PHẦN: XỬ LÝ ẢNH", size=13, bold=True, space_after=10)
     add_center(doc, "ĐỀ TÀI", size=12, bold=True, space_after=6)
     add_center(
         doc,
         "XÂY DỰNG HỆ THỐNG NHẬN DẠNG BIỂN SỐ XE VIỆT NAM\n"
         "BẰNG XỬ LÝ ẢNH TRUYỀN THỐNG",
-        size=21,
+        size=20,
         bold=True,
         space_before=4,
         space_after=10,
@@ -1004,7 +1005,7 @@ def _add_cover(doc: Document) -> None:
         "Ứng dụng Python, OpenCV và Template Matching",
         size=12,
         italic=True,
-        space_after=34,
+        space_after=32,
     )
 
     table = doc.add_table(rows=3, cols=2)
@@ -1022,7 +1023,7 @@ def _add_cover(doc: Document) -> None:
                 "Bùi Văn Đạt — B23DCCN126",
             ],
         ),
-        ("Lớp:", ["[LỚP]"]),
+        ("Lớp môn học:", ["[LỚP MÔN HỌC]"]),
     ]
     for row, (label, values) in zip(table.rows, rows):
         row.cells[0].vertical_alignment = WD_ALIGN_VERTICAL.CENTER
@@ -1055,53 +1056,53 @@ def _add_declaration(doc: Document) -> None:
     add_front_heading(doc, "Lời cam đoan", page_break=False)
     add_para(
         doc,
-        "Nhóm chúng tôi xin cam đoan báo cáo **“Xây dựng hệ thống nhận dạng biển "
-        "số xe Việt Nam bằng xử lý ảnh truyền thống”** là kết quả tìm hiểu, thiết "
-        "kế và triển khai của nhóm. Nội dung báo cáo không sao chép nguyên văn "
-        "công trình của người khác; các tài liệu tham khảo đều được trích dẫn "
-        "và ghi nguồn ở cuối báo cáo.",
+        "Nhóm sinh viên chúng em xin cam đoan báo cáo bài tập lớn môn Xử lý ảnh "
+        "với đề tài **“Xây dựng hệ thống nhận dạng biển số xe Việt Nam bằng xử lý "
+        "ảnh truyền thống”** là kết quả tìm hiểu, thiết kế và triển khai thực chất "
+        "của cả nhóm. Nội dung báo cáo không sao chép nguyên văn công trình của "
+        "người khác; các tài liệu tham khảo và thư viện sử dụng đều được trích dẫn "
+        "và ghi rõ nguồn gốc.",
     )
     add_para(
         doc,
-        "Nhóm chúng tôi cam đoan các kết quả thực nghiệm được trình bày trung "
-        "thực, được tính trực tiếp từ các tệp kết quả của chương trình: "
+        "Chúng em cam đoan các kết quả thực nghiệm được trình bày trung thực, "
+        "được tính toán trực tiếp từ các tệp kết quả của chương trình: "
         "`results/user_final.csv`, `results/user_special_final.csv`, "
         "`results/dev_after_final.csv` và `results/test_after_final.csv`. "
-        "Báo cáo không sử dụng số liệu tự tạo, không chỉnh sửa kết quả và "
-        "không che giấu các trường hợp thất bại.",
+        "Báo cáo hoàn toàn không sử dụng số liệu tự tạo, không chỉnh sửa kết quả "
+        "và không che giấu các trường hợp thuật toán thất bại.",
         align=WD_ALIGN_PARAGRAPH.LEFT,
     )
     add_para(
         doc,
-        "Hệ thống được xây dựng bằng Python và OpenCV, chỉ sử dụng các kỹ thuật "
-        "xử lý ảnh truyền thống và Template Matching. Trong toàn bộ mã nguồn "
-        "không sử dụng học máy, học sâu, YOLO, KNN, SVM, mô hình OCR học sẵn "
-        "hoặc API nhận dạng bên ngoài.",
+        "Hệ thống được xây dựng hoàn toàn bằng Python và OpenCV, chỉ sử dụng các "
+        "kỹ thuật xử lý ảnh truyền thống và Template Matching. Trong toàn bộ mã "
+        "nguồn không sử dụng mô hình học máy, học sâu, YOLO, KNN, SVM, mô hình OCR "
+        "học sẵn hoặc API nhận dạng bên ngoài.",
     )
     add_para(
         doc,
-        "Nhóm chúng tôi nhận thức rõ rằng 14 ảnh thật do người dùng cung cấp đã "
-        "được dùng trong quá trình tinh chỉnh tham số, nên kết quả 13/13 và 1/1 "
-        "là kết quả hồi quy trên tập đã biết, **không phải độ chính xác trên "
-        "một tập kiểm thử độc lập**. Các chỉ số PDR và CSA trên ảnh thật cũng "
-        "chỉ là proxy theo sự hiện diện và số lượng ký tự, vì nhãn chưa có hộp "
-        "bao biển số và hộp bao từng ký tự.",
+        "Chúng em nhận thức rõ rằng 14 ảnh thật do người dùng cung cấp đã được dùng "
+        "trong quá trình tinh chỉnh tham số, nên kết quả 13/13 và 1/1 là kết quả hồi "
+        "quy trên tập đã biết, **không phải độ chính xác trên một tập kiểm thử độc lập**. "
+        "Các chỉ số PDR và CSA trên ảnh thật cũng chỉ là đại diện (proxy) theo sự hiện "
+        "diện và số lượng ký tự, vì nhãn ban đầu chưa có hộp bao biển số và từng ký tự.",
     )
     add_para(
         doc,
-        "Thành viên nhóm: Nguyễn Đình Khải (B23DCCN420), "
+        "Các thành viên thực hiện: Nguyễn Đình Khải (B23DCCN420), "
         "Nguyễn Trung Tường (B23DCCN909), Bùi Văn Đạt (B23DCCN126).",
         align=WD_ALIGN_PARAGRAPH.LEFT,
     )
-    add_para(doc, "Nhóm chúng tôi xin chịu trách nhiệm về nội dung và tính trung "
-             "thực của báo cáo này.", space_before=4, space_after=18)
-    p = add_para(doc, "Đại diện nhóm", indent=False,
+    add_para(doc, "Chúng em xin hoàn toàn chịu trách nhiệm về nội dung và tính trung "
+             "thực của bản báo cáo này.", space_before=4, space_after=18)
+    p = add_para(doc, "Đại diện nhóm sinh viên", indent=False,
                  align=WD_ALIGN_PARAGRAPH.RIGHT, italic=True, space_after=2)
     p = add_para(doc, "(Ký và ghi rõ họ tên)", indent=False,
                  align=WD_ALIGN_PARAGRAPH.RIGHT, italic=True, space_after=36)
     add_para(doc, "Nguyễn Đình Khải", indent=False,
              align=WD_ALIGN_PARAGRAPH.RIGHT, bold=True, space_after=0)
-    add_para(doc, "Tháng 11 năm 2026", indent=False,
+    add_para(doc, "Hà Nội, tháng 11 năm 2026", indent=False,
              align=WD_ALIGN_PARAGRAPH.CENTER, italic=True, space_before=24,
              space_after=0)
 
@@ -1110,32 +1111,34 @@ def _add_acknowledgement(doc: Document) -> None:
     add_front_heading(doc, "Lời cảm ơn")
     add_para(
         doc,
-        "Trong quá trình thực hiện đồ án, nhóm chúng tôi đã nhận được sự hướng "
-        "dẫn, góp ý và động viên của quý thầy cô và bạn bè. Nhóm xin bày tỏ lòng "
-        "biết ơn chân thành tới giảng viên hướng dẫn **[HỌ TÊN GIẢNG VIÊN]** đã "
-        "định hướng đề tài, góp ý về phạm vi bài toán, cách đánh giá và cách "
-        "trình bày kết quả thực nghiệm.",
+        "Trong quá trình thực hiện bài tập lớn môn Xử lý ảnh, nhóm sinh viên chúng em "
+        "đã nhận được sự hướng dẫn tận tình, những lời góp ý quý báu của quý Thầy/Cô. "
+        "Trước hết, chúng em xin bày tỏ lòng biết ơn sâu sắc tới Thầy/Cô giảng viên "
+        "phụ trách môn học **[HỌ TÊN GIẢNG VIÊN]** đã tận tình truyền đạt kiến thức "
+        "chuyên môn, định hướng bài toán và đóng góp nhiều ý kiến xác đáng về phương "
+        "pháp thực nghiệm cũng như cách đánh giá khoa học.",
     )
     add_para(
         doc,
-        "Nhóm xin cảm ơn quý thầy cô trong Khoa [TÊN KHOA], Trường Đại học "
-        "[TÊN TRƯỜNG] đã truyền đạt những kiến thức nền tảng về xử lý ảnh, "
-        "thị giác máy tính và kỹ thuật phần mềm, tạo điều kiện để nhóm hoàn "
-        "thành sản phẩm.",
+        "Chúng em xin chân thành cảm ơn các Thầy/Cô trong Khoa Công nghệ Thông tin — "
+        "Học viện Công nghệ Bưu chính Viễn thông đã trang bị cho chúng em nền tảng kiến "
+        "thức vững vàng về giải thuật xử lý ảnh, thị giác máy tính và kỹ năng lập trình, "
+        "tạo điều kiện thuận lợi nhất để nhóm hoàn thành bài tập lớn này.",
     )
     add_para(
         doc,
-        "Nhóm cũng xin cảm ơn các bạn trong lớp [LỚP] đã trao đổi, góp ý và "
-        "hỗ trợ trong quá trình thử nghiệm. Những ý kiến phản biện đã giúp nhóm "
-        "nhận ra nhiều hạn chế của hệ thống, đặc biệt là các trường hợp ảnh "
-        "nghiêng mạnh, ký tự dính nhau và sự khác biệt giữa font template với "
-        "font trên biển thật.",
+        "Chúng em cũng xin gửi lời cảm ơn tới các bạn sinh viên trong lớp môn học đã cùng "
+        "trao đổi, thảo luận và hỗ trợ trong suốt quá trình thử nghiệm chương trình. Những "
+        "ý kiến phản biện chân thành đã giúp nhóm nhận ra nhiều giới hạn thực tế của giải "
+        "thuật truyền thống, đặc biệt là các trường hợp ảnh nghiêng, ảnh thiếu sáng và "
+        "ký tự dính nét.",
     )
     add_para(
         doc,
-        "Mặc dù đã cố gắng, báo cáo khó tránh khỏi thiếu sót. Nhóm mong nhận "
-        "được góp ý của quý thầy cô để tiếp tục hoàn thiện hệ thống và phương "
-        "pháp đánh giá trong các phiên bản sau.",
+        "Dù đã nỗ lực hết sức để hoàn thiện sản phẩm một cách chỉn chu, báo cáo khó tránh "
+        "khỏi những thiếu sót nhất định. Nhóm chúng em rất mong nhận được những góp ý, chỉ dẫn "
+        "quý báu của Thầy/Cô để tiếp tục trau dồi kiến thức và hoàn thiện các kỹ năng chuyên "
+        "môn trong tương lai.",
     )
 
 
@@ -1297,7 +1300,7 @@ def _add_chapter1(doc: Document, data: dict[str, Any]) -> None:
     )
     add_para(
         doc,
-        "Đồ án này xây dựng một hệ thống nhận dạng biển số xe Việt Nam từ ảnh "
+        "Bài tập lớn này xây dựng một hệ thống nhận dạng biển số xe Việt Nam từ ảnh "
         "tĩnh bằng **Python và OpenCV**, chỉ sử dụng các kỹ thuật xử lý ảnh "
         "truyền thống và **Template Matching**. Hệ thống không dùng học máy, "
         "học sâu, YOLO, KNN, SVM, mô hình OCR học sẵn hoặc API nhận dạng bên "
@@ -1306,7 +1309,7 @@ def _add_chapter1(doc: Document, data: dict[str, Any]) -> None:
         "được ở từng công đoạn.",
     )
 
-    add_h2(doc, "1.2. Mục tiêu của đồ án")
+    add_h2(doc, "1.2. Mục tiêu của bài tập lớn")
     add_para(
         doc,
         "Mục tiêu tổng quát là thiết kế và triển khai một ứng dụng máy tính "
@@ -1334,20 +1337,20 @@ def _add_chapter1(doc: Document, data: dict[str, Any]) -> None:
         ],
     )
 
-    add_h2(doc, "1.3. Câu hỏi nghiên cứu")
-    add_para(doc, "Báo cáo tập trung trả lời năm câu hỏi:")
+    add_h2(doc, "1.3. Các nhiệm vụ kỹ thuật trọng tâm")
+    add_para(doc, "Bài tập lớn tập trung giải quyết và làm rõ năm vấn đề kỹ thuật trọng tâm:")
     add_bullets(
         doc,
         [
-            "**RQ1:** Pipeline truyền thống được thiết kế có chạy đúng end-to-end "
+            "**Nhiệm vụ 1 (Q1):** Pipeline truyền thống được thiết kế có chạy đúng end-to-end "
             "và tạo ra kết quả có cấu trúc, có thể kiểm tra được hay không?",
-            "**RQ2:** Độ chính xác phát hiện, phân đoạn và nhận dạng trên dữ "
-            "liệu tổng hợp đạt mức nào, và mức nào là điểm yếu chính?",
-            "**RQ3:** Trên ảnh thật do người dùng cung cấp, hệ thống hoạt động "
-            "ra sao, và kết quả đó có ý nghĩa thống kê gì?",
-            "**RQ4:** Chi phí thời gian nằm ở công đoạn nào, có phù hợp với "
-            "ứng dụng desktop tương tác không?",
-            "**RQ5:** Hệ thống có đạt các mục tiêu tham chiếu của đặc tả "
+            "**Nhiệm vụ 2 (Q2):** Độ chính xác phát hiện, phân đoạn và nhận dạng trên dữ "
+            "liệu tổng hợp đạt mức nào, và đâu là điểm yếu chính?",
+            "**Nhiệm vụ 3 (Q3):** Trên ảnh thật do người dùng cung cấp, hệ thống hoạt động "
+            "ra sao, và kết quả đó có ý nghĩa thực tiễn gì?",
+            "**Nhiệm vụ 4 (Q4):** Chi phí thời gian nằm ở công đoạn nào, có phù hợp với "
+            "ứng dụng tương tác đồ họa không?",
+            "**Nhiệm vụ 5 (Q5):** Hệ thống có đáp ứng các mục tiêu tham chiếu của môn học "
             "(PDR ≥ 90%, CSA ≥ 85%, EPA ≥ 70%) hay không?",
         ],
     )
@@ -3679,7 +3682,7 @@ def _add_chapter6(doc: Document, data: dict[str, Any]) -> None:
             "**Chưa có hộp bao biển/ký tự cho ảnh thật.** PDR/CSA trên split "
             "user là proxy theo sự hiện diện và số lượng, không phải IoU.",
             "**EPA dưới mục tiêu** trên tập tổng hợp: 47,83% so với ngưỡng "
-            "70%. Khoảng cách này chưa được thu hẹp trong phạm vi đồ án.",
+            "70%. Khoảng cách này chưa được thu hẹp trong phạm vi bài tập lớn.",
             "**Lệch miền template.** Template sinh từ font không khớp hoàn "
             "toàn font trên biển thật; các biến thể thủ công chỉ giảm một phần "
             "khác biệt.",
@@ -4124,7 +4127,7 @@ def main() -> None:
     doc.core_properties.title = (
         "Xây dựng hệ thống nhận dạng biển số xe Việt Nam bằng xử lý ảnh truyền thống"
     )
-    doc.core_properties.subject = "Báo cáo đồ án môn học"
+    doc.core_properties.subject = "Báo cáo Bài tập lớn môn Xử lý ảnh"
     doc.core_properties.author = (
         "Nguyễn Đình Khải; Nguyễn Trung Tường; Bùi Văn Đạt"
     )
@@ -4160,7 +4163,7 @@ def main() -> None:
     set_page_number_start(section2, 1)
     add_header_footer(
         section2,
-        "Báo cáo đồ án — Nhận dạng biển số xe Việt Nam",
+        "Báo cáo Bài tập lớn môn Xử lý ảnh — Nhận dạng biển số xe Việt Nam",
     )
 
     _add_declaration(doc)
