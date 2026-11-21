@@ -942,6 +942,11 @@ def load_data() -> dict[str, Any]:
         },
         "labels": _read_csv(ROOT / "data" / "labels.csv"),
         "user_labels": _read_csv(ROOT / "data" / "user_labels.csv"),
+        "walkthrough": (
+            _read_json(results / "walkthrough.json")
+            if (results / "walkthrough.json").exists()
+            else None
+        ),
         "config_hash": _sha256(ROOT / "config.yaml"),
         "template_counts": _template_counts(),
         "code_lines": _code_lines(),
@@ -1461,7 +1466,8 @@ def _add_chapter1(doc: Document, data: dict[str, Any]) -> None:
         "phân đoạn ký tự, Template Matching và các độ đo đánh giá. **Chương 3** "
         "phân tích yêu cầu, thiết kế kiến trúc, module, cấu hình, dữ liệu và "
         "giao diện. **Chương 4** mô tả chi tiết triển khai từng công đoạn, các "
-        "quyết định kỹ thuật và độ phức tạp tính toán. **Chương 5** trình bày "
+        "quyết định kỹ thuật, độ phức tạp tính toán và một ví dụ chạy tay một "
+        "ảnh từ đầu đến cuối. **Chương 5** trình bày "
         "thực nghiệm, kết quả từng ảnh, so sánh với baseline, phân tích lỗi, "
         "các thực nghiệm bị loại và các đe dọa tính hợp lệ. **Chương 6** kết "
         "luận, nêu hạn chế và hướng phát triển. Cuối báo cáo là tài liệu tham "
@@ -2601,6 +2607,245 @@ def _add_chapter4(doc: Document, data: dict[str, Any]) -> None:
         "load template khoảng 1.521,45 ms và không được tính trong thời gian "
         "từng ảnh. Đây là chi phí thực đo trên một CPU cụ thể, không phải "
         "benchmark tối ưu.",
+    )
+
+    _add_walkthrough(doc, data)
+
+
+def _add_walkthrough(doc: Document, data: dict[str, Any]) -> None:
+    """Ví dụ chạy tay một ảnh, đọc số từ results/walkthrough.json."""
+
+    def dec(value: float | None, digits: int = 2) -> str:
+        if value is None:
+            return "-"
+        return f"{value:.{digits}f}".replace(".", ",")
+
+    walkthrough = data.get("walkthrough")
+    add_h2(doc, "4.12. Ví dụ chạy tay một ảnh từ đầu đến cuối")
+    if not walkthrough:
+        add_para(
+            doc,
+            "Mục này đọc số từ `results/walkthrough.json`. Sinh lại tệp đó "
+            "bằng `python tools\\trace_example.py` rồi dựng lại báo cáo (xem "
+            "Phụ lục D).",
+        )
+        return
+
+    image = walkthrough["image"]
+    width, height = walkthrough["image_size"]
+    candidates = walkthrough.get("candidates") or []
+    best = candidates[0] if candidates else {"source": "-", "score": 0.0}
+    rect = walkthrough.get("rectification") or {}
+    plate_size = rect.get("plate_size") or [0, 0]
+    seg = walkthrough.get("segmentation") or {}
+    characters = walkthrough.get("characters") or []
+    scores = walkthrough.get("scores") or {}
+    thresholds = walkthrough.get("thresholds") or {}
+    timings = walkthrough.get("timings_ms") or {}
+    total_ms = walkthrough.get("total_time_ms") or 0.0
+    ok_count = sum(1 for ch in characters if ch.get("status") == "OK")
+    stage_sum = sum(
+        value
+        for key, value in timings.items()
+        if key in {
+            "preprocess",
+            "detection",
+            "rectification",
+            "segmentation",
+            "recognition",
+            "postprocessing",
+        }
+    )
+
+    add_para(
+        doc,
+        "Các mục trước mô tả từng công đoạn riêng rẽ. Mục này chạy một ảnh "
+        f"thật duy nhất — `{image}`, nhãn `{walkthrough['ground_truth']}` — và "
+        "ghi lại con số ở từng bước, để người đọc nối được lý thuyết ở "
+        "Chương 2, mã nguồn ở Chương 4 và kết quả ở Chương 5. Mọi số trong "
+        "mục này đọc từ `results/walkthrough.json`, sinh bằng "
+        "`python tools\\trace_example.py`; ảnh và cấu hình giống lần đánh giá "
+        f"chính thức (SHA-256 `{walkthrough['config_sha256']}`).",
+    )
+    add_figure(
+        doc,
+        ASSETS / "walkthrough.png",
+        "Sáu khung của cùng một ảnh thật: hộp biển được chọn, ba ứng viên, "
+        "vùng cắt, ảnh sau hiệu chỉnh, ảnh nhị phân và tám ký tự kèm điểm",
+        width_cm=16.2,
+    )
+
+    stages = [
+        (
+            "1. Đọc ảnh",
+            "Đọc bằng OpenCV, kiểm tra định dạng, chuẩn hóa cạnh dài",
+            f"{width}×{height}, hệ số {dec(walkthrough['scale'], 1)}",
+            None,
+        ),
+        (
+            "2. Tiền xử lý",
+            "Xám, blur, CLAHE, Canny, nhị phân Otsu",
+            "Ảnh xám, bản đồ cạnh, hai ảnh nhị phân",
+            "preprocess",
+        ),
+        (
+            "3. Phát hiện",
+            "Contour, morphology, cụm ký tự, chấm điểm",
+            f"{walkthrough['n_candidates']} ứng viên; tốt nhất "
+            f"{best['source']} điểm {dec(best['score'], 3)}",
+            "detection",
+        ),
+        (
+            "4. Hiệu chỉnh",
+            "Thử bốn góc; không đạt thì cắt theo bounding box",
+            f"phương pháp {rect.get('method')}, ảnh biển "
+            f"{plate_size[0]}×{plate_size[1]}",
+            "rectification",
+        ),
+        (
+            "5. Phân đoạn",
+            "Nhị phân Otsu, chiếu dọc, lọc hình học",
+            f"{seg.get('n_rows')} dòng, {seg.get('n_chars')} ký tự, điểm khả "
+            f"thi {dec(seg.get('score'), 3)}",
+            "segmentation",
+        ),
+        (
+            "6. Nhận dạng",
+            "Chuẩn hóa 32×48, template hai tầng",
+            f"{ok_count}/{len(characters)} ký tự OK, điểm trung bình "
+            f"{dec(scores.get('mean'), 3)}, thấp nhất {dec(scores.get('min'), 3)}",
+            "recognition",
+        ),
+        (
+            "7. Hậu xử lý",
+            "Ghép chuỗi, regex, kiểm tra định dạng",
+            f"{walkthrough['raw_text']} → {walkthrough['formatted_text']}, "
+            + ("hợp lệ" if walkthrough["format_valid"] else "không hợp lệ"),
+            "postprocessing",
+        ),
+        (
+            "8. Kết quả",
+            "Trạng thái, hộp biển, thời gian",
+            f"{walkthrough['status']}, tổng {dec(total_ms, 1)} ms",
+            None,
+        ),
+    ]
+    add_table(
+        doc,
+        ["Công đoạn", "Việc xảy ra", "Kết quả quan sát", "Thời gian (ms)"],
+        [
+            (
+                name,
+                work,
+                observed,
+                dec(timings[key], 1) if key and key in timings else "—",
+            )
+            for name, work, observed, key in stages
+        ],
+        [2.6, 6.6, 4.6, 2.2],
+        caption="Tám công đoạn của cùng một ảnh, từ đầu vào đến kết quả",
+        note="Thời gian là của lần chạy sinh tệp JSON, không phải lần đo chính thức.",
+        font_size=9.2,
+        aligns=["left", "left", "left", "center"],
+    )
+    add_para(
+        doc,
+        f"Tổng thời gian là {dec(total_ms, 1)} ms, còn tổng sáu công đoạn có "
+        f"số đo là {dec(stage_sum, 1)} ms; chênh {dec(total_ms - stage_sum, 1)} "
+        "ms là chi phí chuyển tiếp đã giải thích ở mục 4.10. Phát hiện và "
+        f"nhận dạng chiếm phần lớn thời gian "
+        f"({dec(timings.get('detection', 0.0) + timings.get('recognition', 0.0), 1)}"
+        " ms), đúng như phân tích ở mục 4.11.",
+    )
+
+    add_h3(doc, "4.12.1. Điểm từng ký tự")
+    add_para(
+        doc,
+        "Mỗi ký tự được chấm điểm bằng `TM_CCOEFF_NORMED` trên toàn bộ "
+        "template của nhãn, sau đó so điểm cao nhất với điểm cao thứ hai. "
+        "Ngưỡng trong `config.yaml` là "
+        f"{dec(thresholds.get('score'), 2)} cho điểm và "
+        f"{dec(thresholds.get('margin'), 3)} cho chênh lệch. Bảng dưới là tám "
+        "ký tự của ảnh này.",
+    )
+    add_table(
+        doc,
+        ["Vị trí", "Ký tự", "Điểm", "Ứng viên nhì", "Điểm nhì", "Chênh lệch"],
+        [
+            (
+                str(ch["index"] + 1),
+                ch["label"],
+                dec(ch["score"], 3),
+                ch["second_label"],
+                dec(ch["second_score"], 3),
+                dec(ch["margin"], 3),
+            )
+            for ch in characters
+        ],
+        [1.9, 2.1, 2.2, 3.1, 2.3, 2.8],
+        caption="Điểm và chênh lệch của tám ký tự trong ảnh ví dụ",
+        note="Chênh lệch = điểm cao nhất − điểm cao thứ hai; cả tám đều vượt ngưỡng.",
+        font_size=9.2,
+        aligns=["center", "center", "center", "center", "center", "center"],
+    )
+
+    weakest = min(characters, key=lambda ch: ch["margin"]) if characters else None
+    strongest = max(characters, key=lambda ch: ch["margin"]) if characters else None
+    official_ms = None
+    for row in data["user"]["rows"]:
+        if row.get("image_name") == walkthrough["image_name"]:
+            official_ms = float(row["total_time_ms"])
+            break
+    official_ms_text = (
+        f"{official_ms:,.0f} ms".replace(",", ".") if official_ms else "không có"
+    )
+    weakest_text = (
+        f"`{weakest['label']}` ở vị trí {weakest['index'] + 1} có chênh lệch nhỏ "
+        f"nhất ({dec(weakest['margin'], 3)}, ứng viên nhì `{weakest['second_label']}`)"
+        if weakest
+        else "không có ký tự"
+    )
+    strongest_text = (
+        f"`{strongest['label']}` ở vị trí {strongest['index'] + 1} có chênh lệch "
+        f"lớn nhất ({dec(strongest['margin'], 3)}, ứng viên nhì "
+        f"`{strongest['second_label']}`)"
+        if strongest
+        else "không có ký tự"
+    )
+    add_para(
+        doc,
+        f"Cả {ok_count} ký tự đều vượt cả hai ngưỡng nên không ký tự nào bị "
+        "thay bằng `?`, và chuỗi giữ đủ tám vị trí. Ký tự yếu nhất là "
+        f"{weakest_text}; ký tự chắc nhất là {strongest_text}. Thứ tự này khớp "
+        "với phân tích lỗi ở mục 5.10.3: chữ số `1` là ký tự rủi ro nhất vì "
+        "nét đơn giản, dễ tương quan với `3`, `T`, `Y` và `X`.",
+    )
+    add_para(
+        doc,
+        "Một chi tiết đáng chú ý là ảnh này không tìm được bốn góc tin cậy nên "
+        f"bước hiệu chỉnh dùng `{rect.get('method')}` — cắt theo bounding box, "
+        "không warp phối cảnh — mà vẫn đúng 8/8 ký tự. Với biển phẳng, chụp "
+        "gần như thẳng, phép biến đổi phối cảnh không phải yếu tố quyết định. "
+        "Ngược lại, ở các ảnh nghiêng mạnh của tập test, chính bước này là "
+        "nguồn lỗi (mục 5.10.1): fallback cắt hộp bao không khử được nghiêng, "
+        "nên phân đoạn không tách được ký tự.",
+    )
+    add_para(
+        doc,
+        "Về thời gian, cùng ảnh này được đo "
+        f"{dec(total_ms, 1)} ms trong lần chạy sinh tệp JSON, còn lần đo chính "
+        f"thức ghi {official_ms_text} (mục 5.3). Hai số khác nhau vì thời gian "
+        "phụ thuộc máy và thời điểm đo, không phải vì cấu hình — cấu hình có "
+        "cùng SHA-256. Vì vậy báo cáo chỉ so sánh thời gian giữa các công "
+        "đoạn trong cùng một lần đo, không so sánh giá trị tuyệt đối giữa các "
+        "lần.",
+    )
+    add_para(
+        doc,
+        "Muốn tự kiểm chứng, chạy hai lệnh sau từ thư mục gốc của dự án: "
+        "`python tools\\trace_example.py` để sinh lại tệp JSON và "
+        "`python main.py recognize data/user_images/14.webp --save-debug "
+        "--debug-dir results/debug_check` để xem ảnh trung gian của cùng ảnh.",
     )
 
 
@@ -3761,12 +4006,23 @@ def _add_appendix_d(doc: Document, data: dict[str, Any]) -> None:
         "--output-csv results\\user_final.csv "
         "--summary-json results\\user_final_summary.json\n"
         "\n"
-        "REM 5. Sinh hình và biểu đồ cho báo cáo\n"
+        "REM 5. Ghi lại một lần chạy đầy đủ của ảnh ví dụ (mục 4.12)\n"
+        "python tools\\trace_example.py\n"
+        "\n"
+        "REM 6. Sinh hình và biểu đồ cho báo cáo\n"
         "python tools\\build_report_assets.py\n"
         "\n"
-        "REM 6. Sinh báo cáo Word\n"
+        "REM 7. Sinh báo cáo Word\n"
         "python tools\\build_report_docx.py",
         caption="Chuỗi lệnh tái lập chính",
+    )
+    add_para(
+        doc,
+        "Bước 6 tự chạy lại pipeline với `save_debug` cho ảnh ví dụ nếu thư "
+        "mục `results/debug_after/` chưa có, nên không cần chuẩn bị trước. "
+        "Thư mục debug không được đưa vào bản phát hành vì nặng và chỉ là sản "
+        "phẩm phụ; hình trong báo cáo thì đã được lưu sẵn trong "
+        "`reports/assets/`.",
     )
     add_para(
         doc,
@@ -3836,6 +4092,7 @@ def _add_appendix_f(doc: Document) -> None:
             ("results/*.csv", "Kết quả từng ảnh: trạng thái, chuỗi, IoU, CA, CSA, thời gian"),
             ("results/*_summary.json", "Tổng hợp PDR, precision, recall, CA, CSA, EPA, success rate"),
             ("results/*_summary.md", "Bản đọc nhanh bằng Markdown"),
+            ("results/walkthrough.json", "Một lần chạy đầy đủ của ảnh ví dụ ở mục 4.12"),
             ("results/debug/<ảnh>/", "Ảnh gốc, cạnh, nhị phân, ứng viên, biển, ký tự"),
             ("reports/assets/", "Hình và biểu đồ dùng trong báo cáo"),
             ("reports/BaoCao.docx", "Báo cáo Word"),
@@ -3858,6 +4115,8 @@ def _add_appendix_f(doc: Document) -> None:
 # Điểm vào
 # ======================================================================
 def main() -> None:
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     REPORTS.mkdir(parents=True, exist_ok=True)
     data = load_data()
 

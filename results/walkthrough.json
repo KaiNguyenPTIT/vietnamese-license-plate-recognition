@@ -1,0 +1,188 @@
+{
+  "image": "data/user_images/14.webp",
+  "image_name": "14.webp",
+  "image_size": [
+    474,
+    365
+  ],
+  "work_size": [
+    474,
+    365
+  ],
+  "scale": 1.0,
+  "ground_truth": "51F86699",
+  "status": "SUCCESS",
+  "display_status": "THÀNH CÔNG",
+  "message": "Nhận dạng thành công và chuỗi khớp quy tắc định dạng.",
+  "raw_text": "51F86699",
+  "formatted_text": "51F-866.99",
+  "detected_text": "51F-866.99",
+  "format_valid": true,
+  "format_issues": [],
+  "bbox_original": [
+    158.0,
+    258.0,
+    344.0,
+    300.0
+  ],
+  "n_candidates": 3,
+  "candidates": [
+    {
+      "source": "text_row_ad21",
+      "bbox": [
+        158.0,
+        258.0,
+        344.0,
+        300.0
+      ],
+      "score": 0.9395,
+      "text_likeness": 1.0
+    },
+    {
+      "source": "ink_adaptive_close",
+      "bbox": [
+        166.0,
+        263.0,
+        337.0,
+        295.0
+      ],
+      "score": 0.7391,
+      "text_likeness": 0.8
+    },
+    {
+      "source": "ink_adaptive_close",
+      "bbox": [
+        0.0,
+        0.0,
+        474.0,
+        242.0
+      ],
+      "score": 0.4918,
+      "text_likeness": 0.2
+    }
+  ],
+  "selected_candidate_index": 0,
+  "n_attempts": 1,
+  "rectification": {
+    "method": "bbox",
+    "plate_size": [
+      224,
+      50
+    ]
+  },
+  "segmentation": {
+    "status": "OK",
+    "threshold": "otsu",
+    "n_rows": 1,
+    "n_chars": 8,
+    "score": 0.9946
+  },
+  "characters": [
+    {
+      "index": 0,
+      "label": "5",
+      "best_label": "5",
+      "score": 0.8507,
+      "second_label": "6",
+      "second_score": 0.6922,
+      "margin": 0.1585,
+      "status": "OK"
+    },
+    {
+      "index": 1,
+      "label": "1",
+      "best_label": "1",
+      "score": 0.808,
+      "second_label": "3",
+      "second_score": 0.6943,
+      "margin": 0.1137,
+      "status": "OK"
+    },
+    {
+      "index": 2,
+      "label": "F",
+      "best_label": "F",
+      "score": 0.9228,
+      "second_label": "E",
+      "second_score": 0.755,
+      "margin": 0.1678,
+      "status": "OK"
+    },
+    {
+      "index": 3,
+      "label": "8",
+      "best_label": "8",
+      "score": 0.895,
+      "second_label": "9",
+      "second_score": 0.5862,
+      "margin": 0.3088,
+      "status": "OK"
+    },
+    {
+      "index": 4,
+      "label": "6",
+      "best_label": "6",
+      "score": 0.8788,
+      "second_label": "0",
+      "second_score": 0.7366,
+      "margin": 0.1422,
+      "status": "OK"
+    },
+    {
+      "index": 5,
+      "label": "6",
+      "best_label": "6",
+      "score": 0.9067,
+      "second_label": "0",
+      "second_score": 0.7407,
+      "margin": 0.1659,
+      "status": "OK"
+    },
+    {
+      "index": 6,
+      "label": "9",
+      "best_label": "9",
+      "score": 0.9359,
+      "second_label": "0",
+      "second_score": 0.7387,
+      "margin": 0.1972,
+      "status": "OK"
+    },
+    {
+      "index": 7,
+      "label": "9",
+      "best_label": "9",
+      "score": 0.917,
+      "second_label": "0",
+      "second_score": 0.7285,
+      "margin": 0.1885,
+      "status": "OK"
+    }
+  ],
+  "scores": {
+    "mean": 0.8893,
+    "min": 0.808,
+    "mean_margin": 0.1803
+  },
+  "thresholds": {
+    "score": 0.6,
+    "margin": 0.035,
+    "expected_chars": [
+      7,
+      9
+    ],
+    "min_chars": 5
+  },
+  "timings_ms": {
+    "preprocess": 5.5,
+    "detection": 198.9,
+    "rectification": 1.9,
+    "segmentation": 22.8,
+    "recognition": 199.5,
+    "postprocessing": 0.4,
+    "pipeline_total": 433.7
+  },
+  "total_time_ms": 433.7,
+  "config_sha256": "69C7570BD94D24B9307D711B88C6E1B415DFB28A772A10A8C75D038CACA59DDA",
+  "generated_by": "python tools\\trace_example.py"
+}

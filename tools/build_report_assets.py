@@ -25,6 +25,9 @@ FONT_REGULAR = Path("C:/Windows/Fonts/arial.ttf")
 FONT_BOLD = Path("C:/Windows/Fonts/arialbd.ttf")
 FONT_MONO = Path("C:/Windows/Fonts/consola.ttf")
 
+# Ảnh thật dùng cho hình minh họa từng công đoạn và cho mục "ví dụ chạy tay".
+WALKTHROUGH_IMAGE = ROOT / "data" / "user_images" / "14.webp"
+
 
 def font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont:
     path = FONT_BOLD if bold else FONT_REGULAR
@@ -201,8 +204,30 @@ def build_panel(
     print(out_name, canvas.size)
 
 
+def ensure_debug(image: Path) -> Path:
+    """Trả về thư mục ảnh debug của một ảnh, sinh lại nếu chưa có.
+
+    Bản phát hành không kèm thư mục debug (nặng và chỉ là sản phẩm phụ),
+    nên hàm này chạy lại pipeline với ``save_debug`` để tạo đúng các tệp
+    mà các hình minh họa cần.
+    """
+    out = ROOT / "results" / "debug_after" / image.stem
+    if (out / "14_character_strip.png").exists():
+        return out
+
+    sys.path.insert(0, str(ROOT))
+    from src.config import load_config
+    from src.pipeline import LicensePlateRecognizer
+
+    config = load_config(ROOT / "config.yaml")
+    recognizer = LicensePlateRecognizer(config)
+    result = recognizer.recognize(str(image), save_debug=True, debug_dir=out)
+    print(f"debug {image.name}: {result.status} {result.detected_text}")
+    return out
+
+
 def build_preprocess_panel() -> None:
-    base = ROOT / "results" / "debug_after" / "14"
+    base = ensure_debug(WALKTHROUGH_IMAGE)
     build_panel(
         [
             ("Ảnh gốc", base / "01_original.png"),
@@ -217,7 +242,7 @@ def build_preprocess_panel() -> None:
 
 
 def build_segmentation_panel() -> None:
-    base = ROOT / "results" / "debug_after" / "14"
+    base = ensure_debug(WALKTHROUGH_IMAGE)
     build_panel(
         [
             ("Vùng cắt có padding", base / "11_plate_crop.png"),
@@ -234,7 +259,7 @@ def build_segmentation_panel() -> None:
 
 
 def build_candidates() -> None:
-    source = ROOT / "results" / "debug_after" / "14" / "08_candidates.png"
+    source = ensure_debug(WALKTHROUGH_IMAGE) / "08_candidates.png"
     image = Image.open(source).convert("RGB")
     ratio = 1000 / image.width
     image = image.resize(
@@ -242,6 +267,26 @@ def build_candidates() -> None:
     )
     image.save(ASSETS / "candidates.png")
     print("candidates.png", image.size)
+
+
+def build_walkthrough() -> None:
+    """Sáu khung của cùng một ảnh, theo đúng thứ tự tám công đoạn."""
+    base = ensure_debug(WALKTHROUGH_IMAGE)
+    build_panel(
+        [
+            ("1. Ảnh gốc và hộp biển được chọn", base / "09_selected_bbox.png"),
+            ("2. Ba ứng viên trước khi chọn", base / "08_candidates.png"),
+            ("3. Cắt vùng biển có padding", base / "11_plate_crop.png"),
+            ("4. Hiệu chỉnh (fallback bbox)", base / "12_plate_rectified.png"),
+            ("5. Nhị phân Otsu", base / "13_plate_binary.png"),
+            ("6. Tám ký tự sau phân đoạn", base / "14_character_strip.png"),
+        ],
+        "walkthrough.png",
+        columns=3,
+        cell=(560, 330),
+        upscale=True,
+    )
+
 
 
 def build_template_grid() -> None:
@@ -503,6 +548,7 @@ def main() -> int:
     build_preprocess_panel()
     build_segmentation_panel()
     build_candidates()
+    build_walkthrough()
     build_template_grid()
     build_metrics_chart()
     build_condition_chart()
