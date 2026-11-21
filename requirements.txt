@@ -1,0 +1,7 @@
+# Yêu cầu môi trường cho hệ thống nhận dạng biển số xe Việt Nam
+# Python 3.11+ (đã kiểm thử với Python 3.13.6 trên Windows)
+opencv-python>=4.8,<5
+numpy>=1.24,<3
+PyYAML>=6.0
+Pillow>=10.0
+pytest>=8.0

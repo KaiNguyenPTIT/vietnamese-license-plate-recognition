@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Công cụ / hệ điều hành
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Kết quả tạm và ảnh debug
+results/tmp_*
+results/debug/
+results/debug*/
+results/zoom/
+results/char_debug/
+results/char_zoom/
+results/seg_block/
+results/tpl_check/
+results/adapt_test/
+*.log
+
+# Tệp tạm của Word/Office
+~$*
+*.tmp
+
+# Dữ liệu lớn / sinh lại được
+results/char_dataset.pkl
+data/synthetic_manifest.local.json
+
+# Môi trường và bí mật
+.env
+.env.*
+!.env.example

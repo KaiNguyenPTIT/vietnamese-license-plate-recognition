@@ -1,0 +1,17 @@
+# Chuẩn hóa line ending khi commit
+* text=auto eol=lf
+
+# Script Windows cần CRLF
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Tệp nhị phân
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.docx binary
+*.pdf binary
+*.pkl binary
+*.zip binary
